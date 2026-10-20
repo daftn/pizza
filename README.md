@@ -20,7 +20,8 @@ The filename is the recipe's slug and URL: `_recipes/neapolitan.md` becomes `/re
 | `summary` | One line shown on the card and under the title |
 | `uses_dough` | Pizzas only. The slug of a dough recipe |
 | `yield.count` | Balls / rounds in the batch as written (default 1) |
-| `yield.weight` | Optional ball weight. Defaults to total dough ÷ count |
+| `yield.weight` | Optional ball weight. Defaults to total dough ÷ count. If the dough totals more than count × weight, the extra is treated as a bowl-loss buffer and scales with the batch |
+| `yield.default_count` | Ball count the calculator opens with, if different from `yield.count` |
 | `yield.unit` / `yield.units` | What a ball is called, e.g. `round` (default "dough ball" or "pizza") |
 | `yield.label`, `yield.cut` | Optional text shown in the calculator, e.g. "12-inch rounds", "16 pieces each" |
 | `scale` | `balls` (default: count × grams each) or `batch` (a simple batch multiplier) |
@@ -29,7 +30,7 @@ The filename is the recipe's slug and URL: `_recipes/neapolitan.md` becomes `/re
 
 **Dough items:** `{ id, name, g, flour: true, water: true, note }`. Mark every flour with `flour: true` and every water with `water: true`, in all stages, so baker's % and hydration come out right. `{ name: Poolish, stage: Poolish }` adds all of an earlier group.
 
-**Topping items:** `{ id, name, qty, unit, note, optional: true }`. `qty` can be a number or a range like `[5, 7]`. Use `text: "Pinch"` for anything that doesn't scale.
+**Topping items:** `{ id, name, qty, unit, note, optional: true }`. `qty` can be a number or a range like `[5, 7]`. Use `text: "Pinch"` for anything that doesn't scale. Add `per_batch: true` to a topping group that's made once rather than per pizza (e.g. a sauce made by the can).
 
 ## Placeholders in the method
 

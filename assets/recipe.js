@@ -26,6 +26,9 @@
   const refWater = sum(realItems.filter((i) => i.water), (i) => i.g);
   const refCount = yieldInfo.count || 1;
   const refWeight = yieldInfo.weight || (refTotal ? refTotal / refCount : 0);
+  // Dough written beyond count × weight is a bowl-loss buffer; it scales along with the batch.
+  const refBuffer = Math.max(0, refTotal - refCount * refWeight);
+  const defaultCount = yieldInfo.default_count || refCount;
 
   // --- State, seeded from the URL so a batch can be shared ---
 
@@ -35,7 +38,7 @@
     return isFinite(n) && n > 0 ? n : fallback;
   };
   const state = {
-    count: num(params.get("count"), refCount),
+    count: num(params.get("count"), defaultCount),
     weight: num(params.get("weight"), refWeight),
     mult: num(params.get("x"), 1),
   };
@@ -45,7 +48,7 @@
       return { dough: state.mult, pizzas: refCount * state.mult };
     }
     return {
-      dough: refTotal ? (state.count * state.weight) / refTotal : 0,
+      dough: refTotal ? (state.count * state.weight) / (refCount * refWeight) : 0,
       pizzas: state.count,
     };
   }
@@ -128,7 +131,7 @@
       });
     });
     calcEl.querySelector(".reset").addEventListener("click", () => {
-      Object.assign(state, { count: refCount, weight: refWeight, mult: 1 });
+      Object.assign(state, { count: defaultCount, weight: refWeight, mult: 1 });
       renderCalculator();
       update();
     });
@@ -138,6 +141,7 @@
     const stats = [];
     if (doughGroups.length) {
       stats.push(["Total dough", grams(refTotal * f.dough)]);
+      if (refBuffer >= 1) stats.push(["Incl. bowl-loss buffer", grams(refBuffer * f.dough)]);
       if (scaleMode === "batch") stats.push([units, fmt(f.pizzas)]);
       if (refWater && refFlour) stats.push(["Hydration", pct((refWater / refFlour) * 100)]);
     }
@@ -165,18 +169,21 @@
       </div>`;
   }
 
+  // `per_batch: true` groups (e.g. a sauce made by the can) don't multiply by the pizza count.
+  const perLabel = (group) => (group.per_batch ? "batch" : yieldInfo.unit || "pizza");
+
   function toppingTable(group, pizzas) {
-    const showTotal = pizzas !== 1;
+    const showTotal = !group.per_batch && pizzas !== 1;
     const rows = (group.items || []).map((i) => {
-      const total = i.qty == null ? (i.text ? `${esc(i.text)} each` : "") : qtyText(i, pizzas);
-      return `<tr class="${i.optional ? "optional" : ""}"><td>${esc(i.name)}${i.optional ? ' <em class="tag">optional</em>' : ""}${i.note ? `<small>${esc(i.note)}</small>` : ""}</td><td class="num">${esc(qtyText(i, 1))}</td>${showTotal ? `<td class="num">${total}</td>` : ""}</tr>`;
+      const total = i.qty == null ? `<td class="num muted">—</td>` : `<td class="num">${esc(qtyText(i, pizzas))}</td>`;
+      return `<tr class="${i.optional ? "optional" : ""}"><td>${esc(i.name)}${i.optional ? ' <em class="tag">optional</em>' : ""}${i.note ? `<small>${esc(i.note)}</small>` : ""}</td><td class="num">${esc(qtyText(i, 1))}</td>${showTotal ? total : ""}</tr>`;
     });
     const g = toppingGroupGrams(group);
     return `
       <div class="group">
-        <div class="group-head"><h3>${esc(group.name)}</h3>${g ? `<span>${grams(g)} per ${esc(unit)}</span>` : ""}</div>
+        <div class="group-head"><h3>${esc(group.name)}</h3>${g ? `<span>${grams(g)} per ${esc(perLabel(group))}</span>` : ""}</div>
         ${group.note ? `<p class="group-note">${esc(group.note)}</p>` : ""}
-        <table><thead><tr><th>Item</th><th class="num">Per ${esc(unit)}</th>${showTotal ? `<th class="num">All ${fmt(pizzas)}</th>` : ""}</tr></thead><tbody>${rows.join("")}</tbody></table>
+        <table><thead><tr><th>Item</th><th class="num">Per ${esc(perLabel(group))}</th>${showTotal ? `<th class="num">All ${fmt(pizzas)}</th>` : ""}</tr></thead><tbody>${rows.join("")}</tbody></table>
       </div>`;
   }
 
@@ -200,9 +207,12 @@
     return null;
   }
 
-  function isPerPizza(key) {
-    if (key.startsWith("group:")) return toppingGroups.some((g) => g.name === key.slice(6).trim());
-    return !realItems.some((i) => i.id === key) && toppingGroups.some((g) => (g.items || []).some((i) => i.id === key));
+  // For topping placeholders, the "Per …" label they don't scale past; null for anything the calculator scales.
+  function fixedLabel(key) {
+    let group;
+    if (key.startsWith("group:")) group = toppingGroups.find((g) => g.name === key.slice(6).trim());
+    else if (!realItems.some((i) => i.id === key)) group = toppingGroups.find((g) => (g.items || []).some((i) => i.id === key));
+    return group ? "Per " + perLabel(group) : null;
   }
 
   function renderMethod(f) {
@@ -226,8 +236,9 @@
               const v = tokenValue(key, f);
               if (v == null) return `<span class="token-missing" title="No ingredient with this id">${esc(rawKey)}</span>`;
               // Topping amounts are per pizza and don't move with the calculator, so style them apart.
-              return isPerPizza(key)
-                ? `<span class="qty-fixed" title="Per ${esc(unit)}">${esc(v)}</span>`
+              const fixed = fixedLabel(key);
+              return fixed
+                ? `<span class="qty-fixed" title="${esc(fixed)}">${esc(v)}</span>`
                 : `<span class="qty">${esc(v)}</span>`;
             })
       )
@@ -250,7 +261,7 @@
     if (scaleMode === "batch") {
       if (state.mult !== 1) next.set("x", fmt(state.mult));
     } else {
-      if (state.count !== refCount) next.set("count", fmt(state.count));
+      if (state.count !== defaultCount) next.set("count", fmt(state.count));
       if (state.weight !== refWeight) next.set("weight", fmt(state.weight));
     }
     const qs = next.toString();

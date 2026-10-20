@@ -1,7 +1,7 @@
 ---
-title: Sir Lancelot Utah-Style Fat Sticks
+title: Boomsticks
 category: special
-summary: Spiral mix, 48-hour cold ferment, high-loft screen proof and shielded steel bake.
+summary: "Hail to the cheese, baby. Utah-style fat sticks: 48-hour cold ferment, high-loft screen proof, shielded steel bake."
 yield:
   count: 2
   unit: round

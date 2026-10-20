@@ -1,7 +1,7 @@
 ---
 title: Vito's Neapolitan
 category: dough
-summary: Overnight poolish, spiral-mixed in the Ooni Halo Pro with a bassinage finish.
+summary: Overnight poolish, spiral-mixed with a bassinage finish.
 yield:
   count: 6              # the batch as written below
   weight: 280           # 6 × 280g = 1,680g; the extra 35g is a bowl-loss buffer
@@ -17,7 +17,7 @@ dough:
       - { id: poolish_honey, name: "Honey", g: 4 }
       - { id: poolish_flour, name: "00 flour", g: 300, flour: true }
   - name: Final dough
-    note: Bake day, in the Ooni Halo Pro.
+    note: Bake day, in a spiral mixer.
     items:
       - { name: "Cold poolish", stage: Poolish, note: "Straight from the fridge" }
       - { id: bread_flour, name: "High-gluten / bread flour (or Manitoba)", g: 420, flour: true }
@@ -36,28 +36,28 @@ dough:
 3. **Room-temp kickstart (1 hour).** Snap the lid onto the container and leave it at room temperature for **60 minutes** to wake up the yeast.
 4. **Cold ferment.** Transfer the sealed container to the refrigerator for **14 to 24 hours**. By the next day, the poolish should be domed, frothy, and webbed with bubbles.
 
-## Part 2: Ooni Halo Pro mixing protocol (~4.5 hours before baking)
+## Part 2: Spiral mixing (~4.5 hours before baking)
 
-*Equipment setup: install the **spiral dough hook** and lock in the **removable breaker bar**. Keep the poolish cold straight from the fridge to offset mixer friction.*
+*Equipment setup: install the **spiral dough hook** (and **breaker bar**, if your mixer has one). Keep the poolish cold straight from the fridge to offset mixer friction.*
 
-1. **Zero-waste container rinse & liquefy: 15% (90 RPM) for 1:00**
-   - Pour the **[[water]] primary cold water** directly into the cold poolish container. Use your fingers to swish and loosen the poolish from the corners, then dump the entire contents into the Halo Pro bowl.
-   - Run the mixer at **15% (90 RPM) for 1 minute**. The hook and breaker bar will whip the poolish into a uniform, frothy liquid so no dry flour chunks can form.
-2. **Hydrate the flours: 15% (90 RPM) for 4:00**
+1. **Zero-waste container rinse & liquefy: low (~90 RPM) for 1:00**
+   - Pour the **[[water]] primary cold water** directly into the cold poolish container. Use your fingers to swish and loosen the poolish from the corners, then dump the entire contents into the mixer bowl.
+   - Run the mixer on **low (~90 RPM) for 1 minute**. The hook will whip the poolish into a uniform, frothy liquid so no dry flour chunks can form.
+2. **Hydrate the flours: low (~90 RPM) for 4:00**
    - Dump all **[[bread_flour]] bread flour** and **[[flour_00]] 00 flour** into the bowl at once.
-   - Attach the **splash guard** and mix at **15% (90 RPM) for 4 minutes**. Because [[reserve_water]] of water is held back, the dough will quickly grab the hook and ride up against the breaker bar.
-3. **Lock in the salt: 20% (105 RPM) for 2:00**
-   - With the mixer running at **20% (105 RPM)**, pour the **[[salt]] fine sea salt** down the splash guard spout and mix for **2 minutes** until the salt crunch disappears.
-4. **In-bowl relaxation rest: 0% (off) for 10:00**
+   - Mix on **low (~90 RPM) for 4 minutes**. Because [[reserve_water]] of water is held back, the dough will quickly grab the hook.
+3. **Lock in the salt: low-medium (~105 RPM) for 2:00**
+   - With the mixer running on **low-medium (~105 RPM)**, add the **[[salt]] fine sea salt** and mix for **2 minutes** until the salt crunch disappears.
+4. **In-bowl relaxation rest: off for 10:00**
    - Leave the dough untouched inside the closed bowl with the motor off for **10 minutes**. This lets the high-protein flour passively absorb water and build gluten bonds without generating motor friction heat.
-5. **Bassinage drizzle & gluten polish: 35% (160 RPM) for 3:00 to 5:00**
-   - Turn the dial up to **35% (160 RPM)**. Slowly trickle the **[[reserve_water]] reserve cold water** down the splash guard spout in 3 to 4 small splashes, waiting ~30 seconds for the bowl walls to wipe clean before adding the next splash.
-   - **When to stop:** prioritize visual gluten cues over temperature. Stop the mixer as soon as the stainless steel bowl walls wipe completely clean and the dough forms a smooth, satin "pumpkin" (*zucca*) hugging the hook.
+5. **Bassinage drizzle & gluten polish: medium (~160 RPM) for 3:00 to 5:00**
+   - Turn the mixer up to **medium (~160 RPM)**. Slowly trickle the **[[reserve_water]] reserve cold water** down the side of the bowl in 3 to 4 small splashes, waiting ~30 seconds for the bowl walls to wipe clean before adding the next splash.
+   - **When to stop:** prioritize visual gluten cues over temperature. Stop the mixer as soon as the bowl walls wipe completely clean and the dough forms a smooth, satin "pumpkin" (*zucca*) hugging the hook.
    - *Note on temperature:* 73–75°F is a heat ceiling, not a minimum. If the bowl is clean and the dough is smooth at 68–72°F, pull it immediately rather than over-mixing.
 
 ## Part 3: Bulk fermentation & balling
 
-1. **Clean extraction.** Tilt the Halo Pro head back and **unclip the breaker bar and spiral hook first** while leaving the bowl locked in the base. Using lightly damp hands, lift the entire dough ball cleanly out of the unobstructed bowl.
+1. **Clean extraction.** **Remove the hook (and breaker bar) first**, leaving the bowl in place. Using lightly damp hands, lift the entire dough ball cleanly out of the unobstructed bowl.
 2. **Bulk rest (1 hour).** Shape the dough into a tight, smooth round. Cover it with an inverted bowl or lidded container and let it rest for **1 hour** at room temperature.
    - *Cool dough tip:* if your dough came out of the mixer below 70°F, rest it on a wooden cutting board or a folded dish towel (rather than a cold stone countertop), or place it inside a turned-off oven with the oven light on.
 3. **Divide & ball ([[count]] balls at [[weight]]).**
@@ -74,7 +74,7 @@ dough:
 | **9:35 PM (night before)** | **Mix poolish** | Mix [[poolish_water]] water, [[poolish_yeast]] yeast, [[poolish_honey]] honey, and [[poolish_flour]] 00 flour. Cover tightly. |
 | **9:40 – 10:40 PM** | **Room-temp start** | Leave covered on the counter for 1 hour. |
 | **10:40 PM** | **Refrigerate** | Place in the fridge overnight (~13.5 to 14 hours). |
-| **12:15 PM (bake day)** | **Halo Pro mix** | Cold poolish + [[water]] cold water (1 min @ 15%), add flours (4 min @ 15%), add [[salt]] salt (2 min @ 20%), rest 10 min, then drizzle [[reserve_water]] cold water (3–5 min @ 35%). |
+| **12:15 PM (bake day)** | **Spiral mix** | Cold poolish + [[water]] cold water (1 min, low), add flours (4 min, low), add [[salt]] salt (2 min, low-medium), rest 10 min, then drizzle [[reserve_water]] cold water (3–5 min, medium). |
 | **12:40 – 1:40 PM** | **Bulk rest** | Round into a tight ball, cover, and rest 1 hour at room temp (on a wood board if cool). |
 | **1:40 PM** | **Ball dough** | Divide into **[[count]] balls at [[weight]]** using damp hands. Place in proofing box. |
 | **1:40 – 4:25 PM** | **Final proof** | Proof covered at room temperature for ~2 hours 45 minutes until doubled. |

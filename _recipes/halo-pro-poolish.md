@@ -1,5 +1,5 @@
 ---
-title: Ooni Halo Pro & Gozney Poolish
+title: Vito's Neapolitan
 category: dough
 summary: Overnight poolish, spiral-mixed with bassinage, baked at 800–830°F with flame management.
 yield:

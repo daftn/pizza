@@ -3,7 +3,7 @@ description: Dough formulas and pizza recipes, with a calculator that scales eve
 
 # For a project site (username.github.io/pizza) set this to "/pizza".
 # For a user site or custom domain leave it empty.
-baseurl: ""
+baseurl: "/pizza"
 
 markdown: kramdown
 kramdown:

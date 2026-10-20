@@ -7,11 +7,15 @@ layout: default
     <h1>{{ page.title }}</h1>
     {% if page.summary %}<p class="summary">{{ page.summary }}</p>{% endif %}
     {% if page.uses_dough %}
-      {%- assign base = site.recipes | where: "slug", page.uses_dough | first -%}
+      {%- comment -%} uses_dough is one slug or a list of slugs {%- endcomment -%}
+      {%- assign slugs = page.uses_dough | join: "," | split: "," -%}
       <p class="uses-dough">
         Dough:
-        {% if base %}<a href="{{ base.url | relative_url }}">{{ base.title }}</a>
-        {% else %}<span class="token-missing">{{ page.uses_dough }} (not found)</span>{% endif %}
+        {% for slug in slugs %}
+          {%- assign base = site.recipes | where: "slug", slug | first -%}
+          {% if base %}<a href="{{ base.url | relative_url }}">{{ base.title }}</a>
+          {%- else %}<span class="token-missing">{{ slug }} (not found)</span>{% endif %}{% unless forloop.last %} or {% endunless %}
+        {% endfor %}
       </p>
     {% endif %}
   </header>
@@ -24,12 +28,14 @@ layout: default
   </section>
 
   {% if page.category == "dough" %}
-    {%- assign pizzas = site.recipes | where: "uses_dough", page.slug | sort: "title" -%}
-    {% if pizzas.size > 0 %}
+    {%- assign candidates = site.recipes | where: "category", "pizza" | sort: "title" -%}
+    {%- assign found = false -%}
+    {% for p in candidates %}{% assign s = p.uses_dough | join: "," | split: "," %}{% if s contains page.slug %}{% assign found = true %}{% endif %}{% endfor %}
+    {% if found %}
       <section class="related">
         <h2>Pizzas using this dough</h2>
         <ul class="card-list">
-          {% for p in pizzas %}<li><a class="card" href="{{ p.url | relative_url }}"><span class="card-title">{{ p.title }}</span>{% if p.summary %}<span class="card-summary">{{ p.summary }}</span>{% endif %}</a></li>{% endfor %}
+          {% for p in candidates %}{% assign s = p.uses_dough | join: "," | split: "," %}{% unless s contains page.slug %}{% continue %}{% endunless %}<li><a class="card" href="{{ p.url | relative_url }}"><span class="card-title">{{ p.title }}</span>{% if p.summary %}<span class="card-summary">{{ p.summary }}</span>{% endif %}</a></li>{% endfor %}
         </ul>
       </section>
     {% endif %}

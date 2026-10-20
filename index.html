@@ -39,8 +39,8 @@ layout: default
               <span class="card-title">{{ r.title }}</span>
               {% if r.summary %}<span class="card-summary">{{ r.summary }}</span>{% endif %}
               {% if r.uses_dough %}
-                {%- assign base = site.recipes | where: "slug", r.uses_dough | first -%}
-                <span class="card-meta">on {{ base.title | default: r.uses_dough }}</span>
+                {%- assign slugs = r.uses_dough | join: "," | split: "," -%}
+                <span class="card-meta">on {% for slug in slugs %}{% assign base = site.recipes | where: "slug", slug | first %}{{ base.title | default: slug }}{% unless forloop.last %} or {% endunless %}{% endfor %}</span>
               {% endif %}
             </a>
           </li>

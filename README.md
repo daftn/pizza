@@ -18,7 +18,7 @@ The filename is the recipe's slug and URL: `_recipes/neapolitan.md` becomes `/re
 |---|---|
 | `category` | `dough`, `pizza` or `special`. Decides the section on the landing page |
 | `summary` | One line shown on the card and under the title |
-| `uses_dough` | Pizzas only. The slug of a dough recipe |
+| `uses_dough` | Pizzas only. The slug of a dough recipe, or a list like `[charlies-ny, charlies-ny-outdoor]` |
 | `yield.count` | Balls / rounds in the batch as written (default 1) |
 | `yield.weight` | Optional ball weight. Defaults to total dough ÷ count. If the dough totals more than count × weight, the extra is treated as a bowl-loss buffer and scales with the batch |
 | `yield.default_count` | Ball count the calculator opens with, if different from `yield.count` |

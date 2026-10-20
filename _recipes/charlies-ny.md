@@ -1,5 +1,5 @@
 ---
-title: Charlie's New York
+title: Charlie's New York (Home Oven)
 category: dough
 summary: Classic NY dough with a touch of whole grain, 2–3 day cold ferment, baked on a steel at 550°F.
 yield:
@@ -19,7 +19,7 @@ dough:
       - { id: sugar, name: "Granulated sugar", g: 6.2 }
 ---
 
-*From [Charlie Anderson's Authentic New York-Style Pizza](https://charlieandersoncooking.com/recipes/authentic-new-york-style-pizza). See his page for the full write-up and video.*
+*From [Charlie Anderson's Authentic New York-Style Pizza](https://charlieandersoncooking.com/recipes/authentic-new-york-style-pizza). See his page for the full write-up and video. For a gas pizza oven, use [Charlie's New York (Outdoor Oven)](../charlies-ny-outdoor/).*
 
 ## Mix
 

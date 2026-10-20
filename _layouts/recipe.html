@@ -1,0 +1,42 @@
+---
+layout: default
+---
+<article class="recipe">
+  <header class="recipe-header">
+    <p class="eyebrow">{{ page.category | capitalize }}</p>
+    <h1>{{ page.title }}</h1>
+    {% if page.summary %}<p class="summary">{{ page.summary }}</p>{% endif %}
+    {% if page.uses_dough %}
+      {%- assign base = site.recipes | where: "slug", page.uses_dough | first -%}
+      <p class="uses-dough">
+        Dough:
+        {% if base %}<a href="{{ base.url | relative_url }}">{{ base.title }}</a>
+        {% else %}<span class="token-missing">{{ page.uses_dough }} (not found)</span>{% endif %}
+      </p>
+    {% endif %}
+  </header>
+
+  <section id="calculator" class="calculator" aria-label="Batch calculator"></section>
+  <section id="ingredients" class="ingredients"></section>
+
+  <section id="method" class="method">
+    {{ content }}
+  </section>
+
+  {% if page.category == "dough" %}
+    {%- assign pizzas = site.recipes | where: "uses_dough", page.slug | sort: "title" -%}
+    {% if pizzas.size > 0 %}
+      <section class="related">
+        <h2>Pizzas using this dough</h2>
+        <ul class="card-list">
+          {% for p in pizzas %}<li><a class="card" href="{{ p.url | relative_url }}"><span class="card-title">{{ p.title }}</span>{% if p.summary %}<span class="card-summary">{{ p.summary }}</span>{% endif %}</a></li>{% endfor %}
+        </ul>
+      </section>
+    {% endif %}
+  {% endif %}
+</article>
+
+<script id="recipe-data" type="application/json">
+{"scale": {{ page.scale | default: "balls" | jsonify }}, "yield": {{ page.yield | jsonify }}, "dough": {{ page.dough | jsonify }}, "toppings": {{ page.toppings | jsonify }}}
+</script>
+<script src="{{ '/assets/recipe.js' | relative_url }}"></script>

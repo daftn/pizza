@@ -1,0 +1,28 @@
+title: Pizza
+description: Dough formulas and pizza recipes, with a calculator that scales every batch.
+
+# For a project site (username.github.io/pizza) set this to "/pizza".
+# For a user site or custom domain leave it empty.
+baseurl: ""
+
+markdown: kramdown
+kramdown:
+  input: GFM
+
+collections:
+  recipes:
+    output: true
+    permalink: /recipes/:name/
+
+defaults:
+  - scope:
+      path: ""
+      type: recipes
+    values:
+      layout: recipe
+
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor

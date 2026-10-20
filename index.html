@@ -1,0 +1,36 @@
+---
+layout: default
+---
+{%- assign sections = "dough|Doughs|Formulas with a batch calculator.;pizza|Pizzas|Toppings and builds, once the dough is made.;special|Specials|Self-contained recipes with their own dough and toppings." | split: ";" -%}
+
+<section class="intro">
+  <h1>{{ site.title }}</h1>
+  <p>{{ site.description }}</p>
+</section>
+
+{% for s in sections %}
+  {%- assign parts = s | split: "|" -%}
+  {%- assign recipes = site.recipes | where: "category", parts[0] | sort: "title" -%}
+  <section class="index-section">
+    <h2>{{ parts[1] }}</h2>
+    <p class="section-note">{{ parts[2] }}</p>
+    {% if recipes.size > 0 %}
+      <ul class="card-list">
+        {% for r in recipes %}
+          <li>
+            <a class="card" href="{{ r.url | relative_url }}">
+              <span class="card-title">{{ r.title }}</span>
+              {% if r.summary %}<span class="card-summary">{{ r.summary }}</span>{% endif %}
+              {% if r.uses_dough %}
+                {%- assign base = site.recipes | where: "slug", r.uses_dough | first -%}
+                <span class="card-meta">on {{ base.title | default: r.uses_dough }}</span>
+              {% endif %}
+            </a>
+          </li>
+        {% endfor %}
+      </ul>
+    {% else %}
+      <p class="empty">Nothing here yet.</p>
+    {% endif %}
+  </section>
+{% endfor %}

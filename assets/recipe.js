@@ -200,6 +200,11 @@
     return null;
   }
 
+  function isPerPizza(key) {
+    if (key.startsWith("group:")) return toppingGroups.some((g) => g.name === key.slice(6).trim());
+    return !realItems.some((i) => i.id === key) && toppingGroups.some((g) => (g.items || []).some((i) => i.id === key));
+  }
+
   function renderMethod(f) {
     const placed = new Set();
     let html = methodTemplate.replace(/<p>\s*\[\[table:([^\]]+)\]\]\s*<\/p>/g, (m, rawName) => {
@@ -217,9 +222,12 @@
         i % 2
           ? part
           : part.replace(/\[\[([^\]]+)\]\]/g, (m, rawKey) => {
-              const v = tokenValue(rawKey.trim(), f);
-              return v == null
-                ? `<span class="token-missing" title="No ingredient with this id">${esc(rawKey)}</span>`
+              const key = rawKey.trim();
+              const v = tokenValue(key, f);
+              if (v == null) return `<span class="token-missing" title="No ingredient with this id">${esc(rawKey)}</span>`;
+              // Topping amounts are per pizza and don't move with the calculator, so style them apart.
+              return isPerPizza(key)
+                ? `<span class="qty-fixed" title="Per ${esc(unit)}">${esc(v)}</span>`
                 : `<span class="qty">${esc(v)}</span>`;
             })
       )

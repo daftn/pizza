@@ -242,7 +242,9 @@ td small { display: block; color: var(--muted); font-size: 0.8rem; line-height: 
 .method h2 { border-top: 1px solid var(--line); padding-top: 24px; }
 .method li { margin-bottom: 10px; }
 .method li > ul { margin-top: 8px; }
+/* .qty scales with the calculator; .qty-fixed is a per-pizza amount that doesn't. */
 .qty { background: var(--qty-bg); padding: 0 4px; border-radius: 4px; font-weight: 600; white-space: nowrap; }
+.qty-fixed { font-weight: 600; white-space: nowrap; border-bottom: 1px dotted var(--muted); cursor: help; }
 .token-missing { color: var(--warn); font-weight: 600; text-decoration: wavy underline; }
 .token-missing::before { content: "⚠ "; }
 .method blockquote { margin: 16px 0; padding: 4px 16px; border-left: 3px solid var(--accent); color: var(--muted); }

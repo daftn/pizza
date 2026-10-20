@@ -45,7 +45,7 @@ Whisk the warm melted butter, neutral oil and dry spices together, then let it c
 
 [[table:Cheese blend]]
 
-Always grate mozzarella from cold blocks rather than buying pre-shredded bags. Pre-shredded cheese is coated in potato starch and cellulose, which prevents a seamless melt and causes oil pitting. Freshly block-grated mozzarella melts into a glossy blanket with **zero Muenster required**. Dropping the total cheese from 290g to [[group:Cheese blend]] also removes dead weight so the dough can spring tall in the oven. Keep cold in the fridge until assembly.
+Always grate mozzarella from cold blocks rather than buying pre-shredded bags. Pre-shredded cheese is coated in potato starch and cellulose, which prevents a seamless melt and causes oil pitting. Freshly block-grated mozzarella melts into a glossy blanket with **zero Muenster required**. Dropping the total cheese from 290g to 220g also removes dead weight so the dough can spring tall in the oven. Keep cold in the fridge until assembly.
 
 [[table:Parmano dust]]
 

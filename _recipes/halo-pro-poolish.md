@@ -1,7 +1,7 @@
 ---
 title: Vito's Neapolitan
 category: dough
-summary: Overnight poolish, spiral-mixed with bassinage, baked at 800–830°F with flame management.
+summary: Overnight poolish, spiral-mixed in the Ooni Halo Pro with a bassinage finish.
 yield:
   count: 6              # the batch as written below
   weight: 280           # 6 × 280g = 1,680g; the extra 35g is a bowl-loss buffer
@@ -25,24 +25,6 @@ dough:
       - { id: water, name: "Primary cold water (45–50°F)", g: 310, water: true, note: "Added at the start with the poolish" }
       - { id: reserve_water, name: "Reserve cold water (45–50°F)", g: 70, water: true, note: "Held back for the bassinage drizzle" }
       - { id: salt, name: "Fine sea salt", g: 28 }
-
-toppings:
-  - name: Sauce
-    per_batch: true
-    note: One can sauces about 6 pizzas at 3–4 tablespoons each. Make a second can for a bigger batch or heavier saucing.
-    items:
-      - { id: tomatoes, name: "Whole peeled San Marzano tomatoes", qty: 400, unit: g, note: "One can" }
-      - { id: sauce_salt, name: "Fine sea salt", qty: 4, unit: g, note: "1% of the tomato weight" }
-      - { id: sauce_oil, name: "Extra virgin olive oil", qty: 5, unit: g, note: "About 1 tsp" }
-      - { name: "Fresh basil", text: "A few leaves", note: "Hand-torn" }
-  - name: Bench & toppings
-    items:
-      - { name: "Fine semolina (semola rimacinata)", text: "For dusting", note: "Bench and stretching" }
-      - { name: "Crushed tomato sauce", text: "3–4 tbsp" }
-      - { name: "Parmigiano-Reggiano", text: "Light dusting", note: "Freshly grated, under the mozzarella" }
-      - { id: mozz, name: "Mozzarella", qty: [80, 100], unit: g, note: "Dry fresh fior di latte or whole-milk low-moisture, cut into thick batons" }
-      - { name: "Fresh basil", text: "A few whole leaves", note: "Dabbed with olive oil so they don't burn" }
-      - { name: "Extra virgin olive oil", text: "To finish" }
 ---
 
 *Adapted and optimized from Vito Iacopelli's poolish masterclass for a high-efficiency spiral mixer and high-heat gas pizza oven. Flour is 58% 00 and 42% high-gluten or bread flour.*
@@ -85,25 +67,6 @@ toppings:
 4. **Final proof (2.5 to 3 hours).**
    - Proof covered at room temperature (70–72°F) for **2.5 to 3 hours** until the balls have roughly doubled in volume and feel light and pillowy.
 
-## Part 4: Sauce prep, stretching & Gozney bake
-
-1. **Prep the sauce & cheese (45 minutes before bake).**
-   - Pour a [[tomatoes]] can of whole peeled tomatoes into a bowl, add **[[sauce_salt]] fine sea salt**, a drizzle (**[[sauce_oil]]**) of extra virgin olive oil, and hand-torn fresh basil leaves. Crush the tomatoes by hand so the sauce stays chunky and bright, leaving the seeds intact without blending them (which turns the sauce bitter).
-   - Slice the mozzarella into thick rectangular batons and rest them on paper towels to blot away any surface moisture.
-2. **Preheat the Gozney.**
-   - Fire up the Gozney 40 to 45 minutes before baking. Because this dough contains 42% bread/Manitoba flour, aim for a slightly moderated stone temperature of **800–830°F** (425–445°C) rather than 900°F+.
-3. **Stretch in fine semolina.**
-   - Dust your work surface generously with **fine semolina**. Flip a dough ball out onto the semolina and coat both sides.
-   - Press the gas from the center outward toward the rim, stopping ½ inch from the edge. Pinch all the way around the inner border of the rim to lock the air into the *cornicione*.
-   - Lift, stretch to a 12- to 13-inch round, and shake off all excess semolina before setting the dough on the counter to top.
-4. **Top & launch.**
-   - Spread 3 to 4 tablespoons of crushed tomatoes across the base.
-   - Dust with freshly grated Parmigiano-Reggiano, arrange [[mozz]] of mozzarella batons evenly, and top with fresh basil leaves dabbed lightly with olive oil (so they don't burn under the flame).
-   - Slide onto a lightly dusted perforated peel, give it a quick jiggle to confirm it moves freely, and launch into the Gozney.
-5. **Gozney flame management (60 to 90 seconds total).**
-   - **First 40 seconds:** immediately turn the Gozney flame down to **low / medium-low** right after launching. This lets the 800°F+ stone set a crisp, structured undercarriage without scorching the bread-flour crust.
-   - **Final 20 to 40 seconds:** once the bottom sets, rotate the pizza 180° and turn the flame back up to **medium-high / high** to blister the *cornicione* and melt the mozzarella batons.
-
 ## Sample bake-day timeline (target: 5:00 PM dinner)
 
 | Time | Stage | Action |
@@ -115,8 +78,7 @@ toppings:
 | **12:40 – 1:40 PM** | **Bulk rest** | Round into a tight ball, cover, and rest 1 hour at room temp (on a wood board if cool). |
 | **1:40 PM** | **Ball dough** | Divide into **[[count]] balls at [[weight]]** using damp hands. Place in proofing box. |
 | **1:40 – 4:25 PM** | **Final proof** | Proof covered at room temperature for ~2 hours 45 minutes until doubled. |
-| **3:45 PM** | **Fire Gozney & prep** | Ignite the Gozney to reach 800–830°F. Crush tomatoes with 1% salt and slice mozzarella batons. |
-| **4:25 – 5:00 PM** | **Stretch & bake** | Stretch in semolina, top, launch, drop flame for 40s, then raise flame to finish. |
+| **4:25 PM** | **Ready** | Balls are proofed and ready to stretch. |
 
 ## Freezing extra dough balls
 

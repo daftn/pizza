@@ -1,5 +1,5 @@
 ---
-title: Old Reliable
+title: The All-Rounder
 category: dough
 summary: The forgiving all-rounder. 60% hydration, a little olive oil, 24–48 hour cold ferment.
 yield:

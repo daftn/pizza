@@ -5,11 +5,10 @@ summary: Classic NY dough with a touch of whole grain, 2–3 day cold ferment, b
 yield:
   count: 2              # two 14-inch pies as written below
   weight: 352
-  label: 14-inch pies
+  sizes: { 10: 180, 12: 253, 14: 352, 16: 466 }   # 12/14/16 from Charlie; 10 worked out from the same thickness
 
 dough:
   - name: Dough
-    note: "Ball weights by size: 253g for 12-inch, 352g for 14-inch, 466g for 16-inch."
     items:
       - { id: flour, name: "High-gluten flour", g: 376, flour: true }
       - { id: whole_flour, name: "Sifted whole wheat, spelt or rye flour", g: 38, flour: true, note: "Sift out the coarse bran" }

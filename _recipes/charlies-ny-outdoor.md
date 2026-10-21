@@ -5,7 +5,7 @@ summary: Lean NY dough for a gas pizza oven. 62% hydration, no sugar, 3–4 day 
 yield:
   count: 2              # two 14-inch pies as written below
   weight: 350
-  label: 14-inch pies
+  sizes: { 10: 180, 12: 253, 14: 350, 16: 466 }   # 14 from the video; others from Charlie's home-oven sizes
 
 dough:
   - name: Dough

@@ -29,6 +29,11 @@
   // Dough written beyond count × weight is a bowl-loss buffer; it scales along with the batch.
   const refBuffer = Math.max(0, refTotal - refCount * refWeight);
   const defaultCount = yieldInfo.default_count || refCount;
+  // Optional `yield.sizes` ({ inches: grams per ball }) for size buttons and the "Makes" size.
+  const sizes = Object.entries(yieldInfo.sizes || {})
+    .map(([inches, g]) => ({ inches: parseFloat(inches), g }))
+    .filter((s) => s.inches > 0 && s.g > 0)
+    .sort((a, b) => a.g - b.g);
 
   // --- State, seeded from the URL so a batch can be shared ---
 
@@ -91,6 +96,23 @@
   const esc = (s) =>
     String(s == null ? "" : s).replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" })[c]);
 
+  // Pizza diameter for a ball weight, from `sizes`. Diameter grows with √weight, so interpolate on that
+  // between the two nearest sizes (or scale from the end one). Returns { inches, exact }.
+  function sizeFor(weight) {
+    const hit = sizes.find((s) => Math.abs(weight - s.g) <= s.g * 0.02);
+    if (hit) return { inches: hit.inches, exact: true };
+    const i = sizes.findIndex((s) => s.g > weight);
+    let inches;
+    if (i > 0) {
+      const a = sizes[i - 1], b = sizes[i];
+      inches = a.inches + ((b.inches - a.inches) * (Math.sqrt(weight) - Math.sqrt(a.g))) / (Math.sqrt(b.g) - Math.sqrt(a.g));
+    } else {
+      const end = i === 0 ? sizes[0] : sizes[sizes.length - 1];
+      inches = end.inches * Math.sqrt(weight / end.g);
+    }
+    return { inches: Math.round(inches * 2) / 2, exact: false };
+  }
+
   // --- Calculator ---
 
   function renderCalculator() {
@@ -115,8 +137,18 @@
       <div class="calc-inputs">${inputs}
         <button type="button" class="reset">Reset</button>
       </div>
+      ${sizes.length && scaleMode !== "batch" ? `<div class="calc-sizes"><span>Size</span>${sizes
+        .map((s) => `<button type="button" data-g="${s.g}">${fmt(s.inches)}″<small>${grams(s.g)}</small></button>`)
+        .join("")}</div>` : ""}
       <div class="calc-stats"></div>`;
 
+    calcEl.querySelectorAll(".calc-sizes button").forEach((btn) => {
+      btn.addEventListener("click", () => {
+        state.weight = parseFloat(btn.dataset.g);
+        calcEl.querySelector('input[data-key="weight"]').value = fmt(state.weight);
+        update();
+      });
+    });
     calcEl.querySelectorAll("input").forEach((input) => {
       input.addEventListener("input", () => {
         const v = parseFloat(input.value);
@@ -141,7 +173,13 @@
       if (scaleMode === "batch") stats.push([units, fmt(f.pizzas)]);
       if (refWater && refFlour) stats.push(["Hydration", pct((refWater / refFlour) * 100)]);
     }
-    if (yieldInfo.label) stats.push(["Makes", `${fmt(f.pizzas)} × ${esc(yieldInfo.label)}`]);
+    if (sizes.length && scaleMode !== "batch") {
+      const s = sizeFor(state.weight);
+      stats.push(["Makes", `${fmt(f.pizzas)} × ${s.exact ? "" : "~"}${fmt(s.inches)}-inch ${esc(yieldInfo.size_noun || "pies")}`]);
+    } else if (yieldInfo.label) stats.push(["Makes", `${fmt(f.pizzas)} × ${esc(yieldInfo.label)}`]);
+    calcEl.querySelectorAll(".calc-sizes button").forEach((btn) => {
+      btn.classList.toggle("active", Math.abs(parseFloat(btn.dataset.g) - state.weight) < 0.5);
+    });
     if (yieldInfo.cut) stats.push(["Cut", esc(yieldInfo.cut)]);
     const el = calcEl.querySelector(".calc-stats");
     if (el) el.innerHTML = stats.map(([k, v]) => `<div class="stat"><span>${esc(k)}</span><strong>${v}</strong></div>`).join("");

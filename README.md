@@ -23,6 +23,7 @@ The filename is the recipe's slug and URL: `_recipes/neapolitan.md` becomes `/re
 | `yield.weight` | Optional ball weight. Defaults to total dough ÷ count. If the dough totals more than count × weight, the extra is treated as a bowl-loss buffer and scales with the batch |
 | `yield.default_count` | Ball count the calculator opens with, if different from `yield.count` |
 | `yield.unit` / `yield.units` | What a ball is called, e.g. `round` (default "dough ball" or "pizza") |
+| `yield.sizes` | Ball weight per pizza size, like `{ 10: 180, 12: 253, 14: 352, 16: 466 }`. Adds size buttons to the calculator, and "Makes" shows the size for whatever grams each is entered (e.g. "~15-inch"). Replaces `label`. `yield.size_noun` changes "pies" |
 | `yield.label`, `yield.cut` | Optional text shown in the calculator, e.g. "12-inch rounds", "16 pieces each" |
 | `scale` | `balls` (default: count × grams each) or `batch` (a simple batch multiplier) |
 | `dough` | Groups (stages) of dough items, in grams for the batch as written |

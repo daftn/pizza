@@ -5,11 +5,11 @@ summary: The forgiving all-rounder. 60% hydration, a little olive oil, 24–48 h
 yield:
   count: 4              # four 14-inch pies as written below
   weight: 350           # 4 × 350g = 1,400g; the rest is a buffer (or a fifth small ball)
-  label: 14-inch pies
+  sizes: { 10: 175, 12: 250, 14: 350, 16: 460 }   # 12/14 from the book; 10/16 worked out from the same thickness
 
 dough:
   - name: Dough
-    note: "Ball weights by size: 250g for 12-inch (6 balls from this batch), 350g for 14-inch."
+    note: "This batch makes 4 × 14-inch or 6 × 12-inch."
     items:
       - { id: flour, name: "Plain or bread flour", g: 1000, flour: true }
       - { id: water, name: "Cold water (first)", g: 590, water: true }

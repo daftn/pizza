@@ -6,7 +6,7 @@ yield:
   count: 6              # the batch as written below
   weight: 280           # 6 × 280g = 1,680g; the extra 35g is a bowl-loss buffer
   default_count: 4
-  label: 12–13-inch pies
+  sizes: { 10: 180, 12: 260, 14: 350, 16: 460 }   # worked out from 280g for a 12–13-inch pie
 
 dough:
   - name: Poolish

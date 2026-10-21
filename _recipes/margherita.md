@@ -25,6 +25,7 @@ toppings:
     items:
       - { name: "Fresh basil", text: "A few leaves" }
       - { name: "Pecorino Romano", text: "A little more, grated" }
+      - { name: "Balsamic glaze", text: "Drizzle", optional: true }
 ---
 
 ## Sauce
@@ -59,4 +60,4 @@ A home oven can't get close to outdoor-oven heat, so the crust will be paler and
 
 ## Finish
 
-Top with a few fresh basil leaves and a little more grated pecorino.
+Top with a few fresh basil leaves and a little more grated pecorino. A drizzle of balsamic glaze is really good on this too.

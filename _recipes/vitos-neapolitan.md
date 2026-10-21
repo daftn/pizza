@@ -10,14 +10,14 @@ yield:
 
 dough:
   - name: Poolish
-    note: Night before. 1 hour at room temperature, then 14–24 hours in the fridge.
+    note: 1 hour at room temperature, then 14–24 hours in the fridge.
     items:
       - { id: poolish_water, name: "Water (72–75°F)", g: 300, water: true }
       - { id: poolish_yeast, name: "Instant or active dry yeast", g: 3 }
       - { id: poolish_honey, name: "Honey", g: 4 }
       - { id: poolish_flour, name: "00 flour", g: 300, flour: true }
   - name: Final dough
-    note: Bake day, in a spiral mixer.
+    note: Mixed in a spiral mixer after the poolish has fermented.
     items:
       - { name: "Cold poolish", stage: Poolish, note: "Straight from the fridge" }
       - { id: bread_flour, name: "High-gluten / bread flour (or Manitoba)", g: 420, flour: true }
@@ -34,7 +34,7 @@ dough:
 1. **Dissolve yeast & honey.** In a 1.5-liter (6-cup) or larger Tupperware container, whisk the **[[poolish_yeast]] yeast** and **[[poolish_honey]] honey** into **[[poolish_water]] room-temperature water (72–75°F)**.
 2. **Mix in flour.** Add the **[[poolish_flour]] 00 flour** and stir with a spoon or spatula until no dry flour remains. Scrape down the sides of the container.
 3. **Room-temp kickstart (1 hour).** Snap the lid onto the container and leave it at room temperature for **60 minutes** to wake up the yeast.
-4. **Cold ferment.** Transfer the sealed container to the refrigerator for **14 to 24 hours**. By the next day, the poolish should be domed, frothy, and webbed with bubbles.
+4. **Cold ferment.** Transfer the sealed container to the refrigerator for **14 to 24 hours**. By then, the poolish should be domed, frothy, and webbed with bubbles.
 
 ## Part 2: Spiral mixing (~4.5 hours before baking)
 
@@ -67,27 +67,26 @@ dough:
 4. **Final proof (2.5 to 3 hours).**
    - Proof covered at room temperature (70–72°F) for **2.5 to 3 hours** until the balls have roughly doubled in volume and feel light and pillowy.
 
-## Sample bake-day timeline (target: 5:00 PM dinner)
+## Timeline at a glance
 
-| Time | Stage | Action |
+| Stage | Time | Action |
 | :--- | :--- | :--- |
-| **9:35 PM (night before)** | **Mix poolish** | Mix [[poolish_water]] water, [[poolish_yeast]] yeast, [[poolish_honey]] honey, and [[poolish_flour]] 00 flour. Cover tightly. |
-| **9:40 – 10:40 PM** | **Room-temp start** | Leave covered on the counter for 1 hour. |
-| **10:40 PM** | **Refrigerate** | Place in the fridge overnight (~13.5 to 14 hours). |
-| **12:15 PM (bake day)** | **Spiral mix** | Cold poolish + [[water]] cold water (1 min, low), add flours (4 min, low), add [[salt]] salt (2 min, low-medium), rest 10 min, then drizzle [[reserve_water]] cold water (3–5 min, medium). |
-| **12:40 – 1:40 PM** | **Bulk rest** | Round into a tight ball, cover, and rest 1 hour at room temp (on a wood board if cool). |
-| **1:40 PM** | **Ball dough** | Divide into **[[count]] balls at [[weight]]** using damp hands. Place in proofing box. |
-| **1:40 – 4:25 PM** | **Final proof** | Proof covered at room temperature for ~2 hours 45 minutes until doubled. |
-| **4:25 PM** | **Ready** | Balls are proofed and ready to stretch. |
+| **Mix poolish** | ~5 min | Mix [[poolish_water]] water, [[poolish_yeast]] yeast, [[poolish_honey]] honey, and [[poolish_flour]] 00 flour. Cover tightly. |
+| **Room-temp start** | 1 hour | Leave covered on the counter. |
+| **Cold ferment** | 14–24 hours | Into the fridge. |
+| **Spiral mix** | ~20–25 min | Cold poolish + [[water]] cold water (1 min, low), add flours (4 min, low), add [[salt]] salt (2 min, low-medium), rest 10 min, then drizzle [[reserve_water]] cold water (3–5 min, medium). |
+| **Bulk rest** | 1 hour | Round into a tight ball, cover, and rest at room temp (on a wood board if cool). |
+| **Ball dough** | — | Divide into **[[count]] balls at [[weight]]** using damp hands. Place in proofing box. |
+| **Final proof** | 2.5–3 hours | Proof covered at room temperature until doubled. Then stretch and bake. |
 
 ## Freezing extra dough balls
 
 Never freeze dough balls at 100% proofed, as the core takes ~60 minutes to freeze solid and will over-proof and collapse in the freezer. Use one of these two windows:
 
-1. **Option A: 30 minutes after balling (~2:10 PM on the timeline). *Best oven spring.***
+1. **Option A: 30 minutes after balling. *Best oven spring.***
    - Let the freshly shaped balls rest covered for 30 minutes so the seams seal and gluten relaxes, then freeze before large gas pockets form.
    - **To use later:** thaw in a covered dough box in the fridge overnight, then set on the counter **2.5 to 3 hours** before baking (or thaw straight on the counter for **4.5 to 5 hours**).
-2. **Option B: at ~75% proofed (~3:40 PM on the timeline). *Fastest afternoon thaw.***
+2. **Option B: at ~75% proofed. *Fastest thaw.***
    - Pull the balls 2 hours into the final proof when they are puffy and ~75% expanded. The residual warmth will carry them the rest of the way as they freeze.
    - **To use later:** place directly into a lightly oiled, covered proofing box at room temperature **3.5 to 4 hours** before baking.
 3. **How to wrap for the freezer.**

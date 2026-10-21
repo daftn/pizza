@@ -34,7 +34,7 @@ Write the method in markdown. Placeholders fill in scaled amounts:
 - `[[group:Poolish]]`: total weight of a group, e.g. [[group:Poolish]]
 - `[[table:Poolish]]` on its own line moves that table into the method
 
-## Poolish (night before)
+## Poolish
 
 1. Mix [[poolish_flour]] flour, [[poolish_water]] water and [[poolish_yeast]] yeast.
 

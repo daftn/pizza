@@ -51,14 +51,14 @@ Always grate mozzarella from cold blocks rather than buying pre-shredded bags. P
 
 **The "sand" grate and 60-minute counter dry.** Don't use standard shredding holes or a Microplane, which make ribbons that melt and release oil. Cut the cold wedges into rough ½-inch cubes and pulse in a dry blender or mini food processor for 10–15 seconds, or use the tiny, bumpy "starburst" rasp side of a box grater, until reduced to coarse, pebble-like granules. Spread them in a thin layer on a paper towel or plate **uncovered on the counter for 60 to 90 minutes** while the dough proofs. Air-drying removes surface moisture so the cheese acts as a sponge for loose butterfat out of the oven.
 
-## Prep and spiral mixing (Sunday night, 6:00 PM)
+## Prep and spiral mixing
 
 1. **Incorporation (low speed).** Add the [[flour]] flour, [[yeast]] instant yeast and [[sugar]] sugar to the spiral mixer bowl. On **low speed**, pour in the [[water]] cold water (50–55°F). Mix for **2 minutes** until a rough, unified mass forms and no dry flour remains. *(No autolyse needed with a spiral mixer.)*
 2. **Salt and gluten development (medium-low).** Add the [[salt]] fine sea salt. Increase speed slightly (around 25–30%, medium-low) and mix for **5 to 6 minutes**. The dough will clear the sides of the bowl and form a tight "pumpkin" around the hook and breaker bar.
 3. **The oil finish.** With the mixer running, slowly drizzle the [[oil]] olive oil down the inside wall of the bowl. Mix a final **2 to 3 minutes** until the oil is fully absorbed and the dough is satin-smooth and passes the windowpane test. *(Target final dough temperature: 73–75°F.)*
 4. **Bench rest and balling.** Turn the dough onto the counter, cover with an upturned bowl or damp towel, and rest **15 minutes** to relax the gluten. Divide into [[count]] balls of **~[[weight]]**, tension tightly into smooth rounds, place in lightly oiled airtight containers, and refrigerate immediately for **48 hours**.
 
-## Tempering, spreading and high-loft proofing (Tuesday)
+## Tempering, spreading and high-loft proofing (after 48 hours)
 
 1. **The warm temper (45 minutes).** Take the containers out of the fridge **45 minutes before stretching** so the dense core warms to ~60°F and the yeast wakes up. *(Make the garlic butter slurry and set out the Parmano dust to air-dry now.)*
 2. **The anti-cornicione counter spread (to 11 inches).**

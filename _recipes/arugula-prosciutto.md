@@ -6,18 +6,17 @@ uses_dough: vitos-neapolitan
 
 toppings:
   - name: Before the bake
-    note: "Amounts for a 12-inch pie."
     items:
       - { name: "Olive oil", text: "Drizzle" }
-      - { id: mozz, name: "Fresh mozzarella", qty: 100, unit: g, note: "Torn into chunks and drained (see below)" }
+      - { name: "Fresh mozzarella", text: "Torn and drained (see below)" }
   - name: After the bake
     items:
-      - { id: prosciutto, name: "Prosciutto", qty: 45, unit: g, note: "3–4 thin slices" }
-      - { id: arugula, name: "Arugula", qty: 25, unit: g, note: "A big handful" }
+      - { name: "Prosciutto", text: "Thin slices" }
+      - { name: "Arugula", text: "A handful" }
       - { name: "Olive oil", text: "A splash, for the arugula" }
       - { name: "Lemon juice", text: "A squeeze" }
       - { name: "Black pepper", text: "A few grinds" }
-      - { id: parm, name: "Parmesan", qty: 10, unit: g, note: "Shaved with a vegetable peeler" }
+      - { name: "Parmesan", text: "Shaved with a vegetable peeler" }
       - { name: "Balsamic glaze", text: "Drizzle" }
 ---
 
@@ -28,7 +27,7 @@ Fresh mozzarella holds a lot of water. Tear it into chunks about **an hour ahead
 ## Build
 
 1. **Stretch** the dough ball to about 12 inches, keeping a puffy rim.
-2. **Top:** brush or drizzle the base with olive oil, then scatter [[mozz]] mozzarella. No sauce on this one.
+2. **Top:** brush or drizzle the base with olive oil, then scatter the mozzarella. No sauce on this one.
 
 ## Bake: outdoor oven
 
@@ -48,7 +47,7 @@ A home oven can't get close to outdoor-oven heat, so the crust will be paler and
 
 Work quickly so the pizza is still hot.
 
-1. **Prosciutto first, right away.** Drape [[prosciutto]] prosciutto over the hot pizza so it softens and warms without cooking.
-2. **Dress the arugula** at the last minute so it doesn't wilt: toss [[arugula]] arugula with a splash of olive oil, a squeeze of lemon and black pepper. Pile it on top of the prosciutto.
-3. **Shave** [[parm]] parmesan over the top.
+1. **Prosciutto first, right away.** Drape the prosciutto over the hot pizza so it softens and warms without cooking.
+2. **Dress the arugula** at the last minute so it doesn't wilt: toss the arugula with a splash of olive oil, a squeeze of lemon and black pepper. Pile it on top of the prosciutto.
+3. **Shave** parmesan over the top.
 4. **Drizzle with balsamic glaze.** Best part.

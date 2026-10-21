@@ -5,7 +5,7 @@ category: pizza
 summary: One-line description shown on the landing page.
 uses_dough: example-dough    # filename of a dough in _recipes, without .md
 
-# Amounts for ONE pizza. The page has a "how many pizzas" input that multiplies them.
+# Amounts for ONE pizza. Pizza pages have no calculator; dough pages do.
 # qty can be a number or a range like [5, 7]; use `text:` for things like "Pinch" or "To taste".
 toppings:
   - name: Toppings

@@ -18,7 +18,7 @@ Personal pizza recipe site for the owner and friends, live at https://daftn.gith
 
 - Dough items are written in **grams for the batch as written**, flour marked `flour: true` and water `water: true`; baker's % and hydration are derived.
 - Scale factor = (balls × grams each) ÷ (`yield.count` × `yield.weight`). Dough beyond count × weight is a bowl-loss buffer and scales too.
-- Toppings are **per pizza** and multiply by the pizza count; groups with `per_batch: true` (sauces made by the can) don't.
+- Toppings are **per pizza**. Pizza pages have no calculator (owner's call), so they show one pizza's amounts. On `special` recipes (which have their own dough) toppings multiply by the count; groups with `per_batch: true` (sauces made by the can) don't.
 - In the method, placeholders for dough amounts get a highlight (they change with the calculator); topping placeholders get a dotted underline with a "Per pizza" hint (they don't). Unknown placeholders show in red with ⚠.
 
 ## Conventions (decided with the owner)

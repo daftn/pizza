@@ -26,7 +26,7 @@ The filename is the recipe's slug and URL: `_recipes/neapolitan.md` becomes `/re
 | `yield.label`, `yield.cut` | Optional text shown in the calculator, e.g. "12-inch rounds", "16 pieces each" |
 | `scale` | `balls` (default: count × grams each) or `batch` (a simple batch multiplier) |
 | `dough` | Groups (stages) of dough items, in grams for the batch as written |
-| `toppings` | Groups of topping items, amounts for **one** pizza |
+| `toppings` | Groups of topping items, amounts for **one** pizza. Pizza pages show these as is (no calculator); on `special` recipes they multiply by the count |
 
 **Dough items:** `{ id, name, g, flour: true, water: true, note }`. Mark every flour with `flour: true` and every water with `water: true`, in all stages, so baker's % and hydration come out right. `{ name: Poolish, stage: Poolish }` adds all of an earlier group.
 

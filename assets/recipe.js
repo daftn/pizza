@@ -37,8 +37,9 @@
     const n = parseFloat(v);
     return isFinite(n) && n > 0 ? n : fallback;
   };
+  // Pizza pages (toppings only) have no calculator: amounts are for one pizza.
   const state = {
-    count: num(params.get("count"), defaultCount),
+    count: doughGroups.length ? num(params.get("count"), defaultCount) : defaultCount,
     weight: num(params.get("weight"), refWeight),
     mult: num(params.get("x"), 1),
   };
@@ -93,14 +94,14 @@
   // --- Calculator ---
 
   function renderCalculator() {
-    if (!doughGroups.length && !toppingGroups.length) return;
+    if (!doughGroups.length) return;
     let inputs;
     if (scaleMode === "batch") {
       inputs = `
         <label class="field"><span>Batches</span>
           <input type="number" inputmode="decimal" min="0.25" step="0.25" data-key="mult" value="${fmt(state.mult)}">
         </label>`;
-    } else if (doughGroups.length) {
+    } else {
       inputs = `
         <label class="field"><span>${esc(units)}</span>
           <input type="number" inputmode="numeric" min="1" step="1" data-key="count" value="${fmt(state.count)}">
@@ -108,11 +109,6 @@
         <span class="times" aria-hidden="true">×</span>
         <label class="field"><span>Grams each</span>
           <input type="number" inputmode="decimal" min="1" step="1" data-key="weight" value="${fmt(state.weight)}">
-        </label>`;
-    } else {
-      inputs = `
-        <label class="field"><span>${esc(units)}</span>
-          <input type="number" inputmode="numeric" min="1" step="1" data-key="count" value="${fmt(state.count)}">
         </label>`;
     }
     calcEl.innerHTML = `

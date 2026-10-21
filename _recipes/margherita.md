@@ -48,6 +48,15 @@ Fresh mozzarella holds a lot of water. Tear it into chunks about **an hour ahead
 2. **Bake 60–90 seconds**, turning the pizza every 15–20 seconds so the side by the flame doesn't burn.
 3. **Done** when the rim is puffed with leopard spots and the cheese has melted.
 
+## Bake: home oven
+
+A home oven can't get close to outdoor-oven heat, so the crust will be paler and a bit crisper. It's still a good pizza.
+
+1. **Preheat at the oven's max (500–550°F) for 45–60 minutes** with a baking steel or stone on the top rack, about 6 inches below the broiler.
+2. **Bake 6–8 minutes**, until the bottom is browned.
+3. **Switch to broil for the last 1–2 minutes** to color the rim and top. Watch it closely; it goes fast.
+   - With the longer bake, fresh mozzarella can release water. Add it halfway through the bake if the center keeps going soggy.
+
 ## Finish
 
 Top with a few fresh basil leaves and a little more grated pecorino.

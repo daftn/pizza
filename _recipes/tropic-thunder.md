@@ -7,7 +7,7 @@ uses_dough: everyday-dough
 toppings:
   - name: Sauce
     per_batch: true
-    note: Stir together, no cooking needed. One can covers 5–6 pizzas.
+    note: Stir together, no cooking needed. One can covers 5–6 pizzas. Store-bought pizza sauce works too.
     items:
       - { id: tomatoes, name: "Canned crushed tomatoes", qty: 794, unit: g, note: "One 28 oz can" }
       - { id: sauce_salt, name: "Salt", qty: 6, unit: g, note: "About 1 tsp, then taste" }
@@ -27,6 +27,8 @@ toppings:
 ## Sauce
 
 1. Stir the [[tomatoes]] crushed tomatoes with the [[sauce_salt]] salt, [[sauce_oregano]] oregano and [[sauce_oil]] olive oil. Taste and add salt if it needs it.
+
+*Shortcut:* a jar of store-bought pizza sauce works fine here. The bacon and pineapple carry this pizza, so the sauce matters less than on a Margherita. Pick a thick one, or it can make the middle soggy.
 
 ## Prep the pineapple
 

@@ -1,7 +1,7 @@
 ---
 title: Ultimate Three-Cheese White
 category: pizza
-summary: Garlic olive oil, a crunchy parmesan and pecorino layer, two kinds of mozzarella and whipped ricotta clouds, finished with basil, black pepper and flaky salt.
+summary: Garlic olive oil, a crunchy parmesan and pecorino layer, two kinds of mozzarella and whipped ricotta clouds, finished with basil, black pepper, flaky salt and balsamic glaze.
 uses_dough: vitos-neapolitan
 
 toppings:
@@ -26,7 +26,7 @@ toppings:
       - { name: "Black pepper", text: "Freshly cracked, over the ricotta" }
       - { name: "Fresh basil", text: "A few leaves, torn" }
       - { name: "Flaky sea salt", text: "A touch, on the rim" }
-      - { name: "Hot honey", text: "Drizzle", optional: true }
+      - { name: "Balsamic glaze", text: "Drizzle" }
 ---
 
 ## Prep (a few hours ahead)
@@ -57,9 +57,9 @@ For an oven with the flame along one side.
 
 ## Finish
 
-Keep it clean: no lemon. The pecorino and black pepper already cut through the richness, so the garlic, cheeses and ricotta can stand on their own.
+No lemon and no hot honey. The pecorino, black pepper and a little balsamic glaze cut through the richness, so the garlic, cheeses and ricotta can stand on their own.
 
 1. **Basil right away.** Scatter torn fresh basil the moment the pizza lands on the wire rack.
 2. **Rest 60 seconds** so the steam escapes and the crust stays crisp.
 3. **Pepper and salt.** Crack black pepper over the ricotta dollops and add a touch of flaky sea salt on the rim.
-4. *Optional:* a drizzle of hot honey if you want it sweet and spicy.
+4. **Balsamic glaze.** Finish with a light drizzle over the top.

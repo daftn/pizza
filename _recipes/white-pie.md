@@ -1,5 +1,5 @@
 ---
-title: Ultimate Three-Cheese White
+title: White Zombie
 category: pizza
 summary: Garlic olive oil, a crunchy parmesan and pecorino layer, two kinds of mozzarella and whipped ricotta clouds, finished with basil, black pepper, flaky salt and balsamic glaze.
 uses_dough: vitos-neapolitan

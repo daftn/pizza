@@ -1,5 +1,5 @@
 ---
-title: Arugula and Prosciutto
+title: Dr. Hannibal Lecter
 category: pizza
 summary: White pie with fresh mozzarella, topped after the bake with prosciutto, lemony arugula, shaved parmesan and balsamic glaze.
 uses_dough: vitos-neapolitan

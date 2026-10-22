@@ -40,14 +40,14 @@ toppings:
 
 ## Bake: home oven
 
-Use [New York (Home Oven)](../charlies-ny/) or [The All-Rounder](../everyday-dough/).
+Use [New York (Home Oven)](../charlies-ny/) or [The Default](../everyday-dough/).
 
 1. **Preheat at the oven's max (500–550°F) for 45–60 minutes** with a baking steel or stone on the top rack.
 2. **Bake 7–9 minutes**, until the cheese is bubbling and the bottom is browned.
 
 ## Bake: outdoor oven
 
-Use [New York (Outdoor Oven)](../charlies-ny-outdoor/) or [The All-Rounder](../everyday-dough/).
+Use [New York (Outdoor Oven)](../charlies-ny-outdoor/) or [The Default](../everyday-dough/).
 
 1. **Preheat to about 600–650°F on the stone**, checked with an infrared thermometer. Keep it on the cooler side: BBQ sauce has a lot of sugar and scorches fast.
 2. **Bake 2–3 minutes**, turning the pizza every 20–30 seconds.

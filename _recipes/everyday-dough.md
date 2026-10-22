@@ -1,7 +1,7 @@
 ---
-title: The All-Rounder
+title: The Default
 category: dough
-summary: The forgiving all-rounder. 60% hydration, a little olive oil, 24–48 hour cold ferment.
+summary: The forgiving go-to. 60% hydration, a little olive oil, 24–48 hour cold ferment.
 yield:
   count: 4              # four 14-inch pies as written below
   weight: 350           # 4 × 350g = 1,400g; the extra ~30g (2%) is a bowl-loss buffer

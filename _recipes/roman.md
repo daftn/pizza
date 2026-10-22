@@ -1,5 +1,5 @@
 ---
-title: Roman
+title: Roman Style
 category: dough
 summary: Light and crispy. 70% hydration with semolina and olive oil for a golden crust, 24–48 hour cold ferment.
 yield:

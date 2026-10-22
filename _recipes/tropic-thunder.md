@@ -7,26 +7,25 @@ uses_dough: everyday-dough
 toppings:
   - name: Sauce
     per_batch: true
-    note: Stir together, no cooking needed. One can covers 5–6 pizzas. Store-bought pizza sauce works too.
+    note: Stir together, no cooking needed. One can covers several pizzas. Store-bought pizza sauce works too.
     items:
       - { id: tomatoes, name: "Canned crushed tomatoes", qty: 794, unit: g, note: "One 28 oz can" }
-      - { id: sauce_salt, name: "Salt", qty: 6, unit: g, note: "About 1 tsp, then taste" }
-      - { id: sauce_oregano, name: "Dried oregano", qty: 2, unit: g, note: "About 2 tsp" }
-      - { id: sauce_oil, name: "Olive oil", qty: 15, unit: g, note: "About 1 tbsp" }
+      - { name: "Salt", text: "To taste" }
+      - { name: "Dried oregano", text: "A good pinch" }
+      - { name: "Olive oil", text: "A splash" }
   - name: Toppings
-    note: "Amounts for a 14-inch pie. Starting points: adjust after the first bake."
     items:
-      - { id: sauce, name: "Sauce", qty: 140, unit: g }
-      - { id: mozz, name: "Low-moisture mozzarella", qty: 160, unit: g, note: "Grated from a block" }
-      - { id: bacon, name: "Canadian bacon", qty: 85, unit: g, note: "8–10 thin slices, halved or quartered" }
-      - { id: pineapple, name: "Pineapple", qty: 120, unit: g, note: "Fresh or canned, in small chunks, patted dry" }
+      - { name: "Sauce", text: "Spread thin" }
+      - { name: "Low-moisture mozzarella", text: "Grated from a block" }
+      - { name: "Canadian bacon", text: "Thin slices, halved or quartered" }
+      - { name: "Pineapple", text: "Small chunks, patted dry", note: "Fresh or canned" }
       - { name: "Jalapeño", text: "A few thin slices", optional: true }
       - { name: "Hot honey", text: "Drizzle after the bake", optional: true }
 ---
 
 ## Sauce
 
-1. Stir the [[tomatoes]] crushed tomatoes with the [[sauce_salt]] salt, [[sauce_oregano]] oregano and [[sauce_oil]] olive oil. Taste and add salt if it needs it.
+1. Stir the [[tomatoes]] crushed tomatoes with some salt, a good pinch of oregano and a splash of olive oil. Taste and add more salt if it needs it.
 
 *Shortcut:* a jar of store-bought pizza sauce works fine here. The bacon and pineapple carry this pizza, so the sauce matters less than on a Margherita. Pick a thick one, or it can make the middle soggy.
 
@@ -37,7 +36,7 @@ Pineapple is wet, and that water ends up in the middle of the pizza. Cut it into
 ## Build
 
 1. **Stretch** the dough ball to about 14 inches.
-2. **Top in this order:** spread [[sauce]] sauce, then [[mozz]] mozzarella, then [[bacon]] Canadian bacon and [[pineapple]] pineapple spread evenly. Add jalapeño if you want some heat.
+2. **Top in this order:** spread the sauce, then the mozzarella, then the Canadian bacon and pineapple spread evenly. Add jalapeño if you want some heat.
    - Putting the bacon and pineapple on top of the cheese lets them brown and crisp at the edges.
 
 ## Bake: outdoor oven

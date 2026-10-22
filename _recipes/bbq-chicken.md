@@ -14,7 +14,7 @@ toppings:
       - { name: "Bacon", text: "Cooked almost crisp, chopped" }
       - { name: "Cilantro", text: "A pinch, chopped, after the bake" }
   - name: Four-cheese blend
-    note: Toss together. Swap in whatever four cheeses you like.
+    note: "No set recipe: mix four cheeses to taste. These are just an example."
     items:
       - { name: "Low-moisture mozzarella", text: "Grated" }
       - { name: "Provolone", text: "Grated" }

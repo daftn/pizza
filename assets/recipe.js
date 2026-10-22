@@ -26,8 +26,7 @@
   const refWater = sum(realItems.filter((i) => i.water), (i) => i.g);
   const refCount = yieldInfo.count || 1;
   const refWeight = yieldInfo.weight || (refTotal ? refTotal / refCount : 0);
-  // Dough written beyond count × weight is a bowl-loss buffer; it scales along with the batch.
-  const refBuffer = Math.max(0, refTotal - refCount * refWeight);
+  // Dough written beyond count × weight is a bowl-loss buffer; it scales along with the batch but isn't shown.
   const defaultCount = yieldInfo.default_count || refCount;
   // Optional `yield.sizes` ({ inches: grams per ball }) for size buttons and the "Makes" size.
   const sizes = Object.entries(yieldInfo.sizes || {})
@@ -169,7 +168,6 @@
     const stats = [];
     if (doughGroups.length) {
       stats.push(["Total dough", grams(refTotal * f.dough)]);
-      if (refBuffer >= 1) stats.push(["Incl. bowl-loss buffer", grams(refBuffer * f.dough)]);
       if (scaleMode === "batch") stats.push([units, fmt(f.pizzas)]);
       if (refWater && refFlour) stats.push(["Hydration", pct((refWater / refFlour) * 100)]);
     }

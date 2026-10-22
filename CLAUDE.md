@@ -34,7 +34,7 @@ Personal pizza recipe site for the owner and friends, live at https://daftn.gith
 - **Names:** the owner's friends name the pizzas, so titles change. Fun names draw on horror, horror comedies, action movies (e.g. *Die Hard*) and rock/metal, often as cheese or ingredient puns (Mozzferatu, Scream Cheese). Change `title:` only. Keep the filename (slug) stable, since it's the URL and what `uses_dough` points at. Renaming a slug means updating every `uses_dough` and `../slug/` link.
 - **Links between recipes** inside a recipe body use relative paths like `[Charlie's NY](../charlies-ny/)`. Don't use Liquid there.
 - **Unit style:** grams written like `700g`, temperatures as `425°F`. No LaTeX/math notation (`$100\%$` doesn't render on Pages).
-- **Vibe:** horror movie / metal / *Army of Darkness*, but readable: bone-colored light mode, charcoal (not pure black) dark mode, blood-red accent. Headings in Pirata One, body in Inter, labels in IBM Plex Mono.
+- **Vibe:** horror movie / metal / *Army of Darkness*, but readable: bone-colored light mode, charcoal (not pure black) dark mode, blood-red accent. Site name in Pirata One, all other headings (recipe names, sections, quotes) in Texturina, body in Inter, labels in IBM Plex Mono.
 
 ## Workflow
 

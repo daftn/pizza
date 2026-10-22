@@ -159,10 +159,34 @@ h3 { font-size: 1.4rem; margin: 0; }
   transition: transform 0.15s, box-shadow 0.15s;
 }
 .card:hover { transform: translateY(-2px) rotate(-0.4deg); box-shadow: 0 8px 20px -12px rgba(0, 0, 0, 0.5); }
+.card.has-photo { overflow: hidden; }
+.card-photo {
+  display: block;
+  width: calc(100% + 32px);
+  max-width: none;
+  margin: -14px -16px 8px;
+  height: auto;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+}
 .card-title { font-family: var(--display); font-size: 1.45rem; line-height: 1.1; }
 .card-summary { color: var(--muted); font-size: 0.9rem; }
 .card-badge { color: var(--accent); font: 600 0.7rem var(--mono); text-transform: uppercase; letter-spacing: 0.06em; }
 .card-meta { color: var(--accent); font: 600 0.75rem var(--mono); margin-top: auto; padding-top: 6px; }
+
+/* Recipe photo: square, from assets/photos/ (see _tools/add_photo.py) */
+
+.recipe-photo { margin: 8px 0 20px; }
+.recipe-photo img {
+  display: block;
+  width: 100%;
+  max-width: 560px;
+  height: auto;
+  aspect-ratio: 1;
+  object-fit: cover;
+  border: 1px solid var(--line);
+  border-radius: 4px;
+}
 
 /* Recipe header */
 

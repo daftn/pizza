@@ -20,6 +20,12 @@ layout: default
     {% endif %}
   </header>
 
+  {% if page.photo %}
+    <figure class="recipe-photo">
+      <img src="{{ '/assets/photos/' | append: page.photo | relative_url }}" alt="{{ page.title }}" width="1200" height="1200">
+    </figure>
+  {% endif %}
+
   <section id="calculator" class="calculator" aria-label="Batch calculator"></section>
   <section id="ingredients" class="ingredients"></section>
 

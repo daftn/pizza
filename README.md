@@ -17,6 +17,7 @@ The filename is the recipe's slug and URL: `_recipes/neapolitan.md` becomes `/re
 | Field | Meaning |
 |---|---|
 | `category` | `dough`, `pizza` or `special`. Decides the section on the landing page |
+| `photo` | Optional. A file in `assets/photos/`, like `margherita.jpg`. Shows under the title and as the card thumbnail. Make it with `python3 _tools/add_photo.py photo.jpg <slug>`, which squares it, shrinks it, makes the `-thumb` version and strips location data |
 | `pin` | Optional. Lists the recipe first in its section on the landing page; `1` comes before `2`, and the rest stay alphabetical |
 | `summary` | One line shown on the card and under the title |
 | `fest_year`, `fest_theme` | Fear Fest pies only, e.g. `2026` and `Alfred Hitchcock`. Moves the pizza from Pizzas into the Fear Fest section (newest year first) and labels it with the year and theme |

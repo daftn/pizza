@@ -6,21 +6,20 @@ uses_dough: [everyday-dough, charlies-ny, charlies-ny-outdoor]
 
 toppings:
   - name: Toppings
-    note: "Amounts for a 14-inch pie. Starting points: adjust after the first bake."
     items:
-      - { id: sauce, name: "Hickory BBQ sauce", qty: 90, unit: g, note: "Store-bought is fine. Use less than you would tomato sauce; it's strong and sweet" }
-      - { id: gouda, name: "Smoked gouda", qty: 60, unit: g, note: "Shredded" }
-      - { id: chicken, name: "Cooked chicken", qty: 100, unit: g, note: "Diced small and tossed in a spoonful of the BBQ sauce" }
-      - { id: onion, name: "Red onion", qty: 30, unit: g, note: "Sliced thin" }
-      - { id: bacon, name: "Bacon", qty: 40, unit: g, note: "About 3 slices, cooked almost crisp and chopped" }
+      - { name: "Hickory BBQ sauce", text: "Spread thin", note: "Store-bought is fine. Use less than you would tomato sauce; it's strong and sweet" }
+      - { name: "Smoked gouda", text: "Shredded" }
+      - { name: "Cooked chicken", text: "Diced small", note: "Tossed in a spoonful of the BBQ sauce" }
+      - { name: "Red onion", text: "Sliced thin" }
+      - { name: "Bacon", text: "Cooked almost crisp, chopped" }
       - { name: "Cilantro", text: "A pinch, chopped, after the bake" }
   - name: Four-cheese blend
     note: Toss together. Swap in whatever four cheeses you like.
     items:
-      - { name: "Low-moisture mozzarella", qty: 60, unit: g, note: "Grated" }
-      - { name: "Provolone", qty: 25, unit: g, note: "Grated" }
-      - { name: "White cheddar", qty: 25, unit: g, note: "Grated" }
-      - { name: "Parmesan", qty: 10, unit: g, note: "Grated" }
+      - { name: "Low-moisture mozzarella", text: "Grated" }
+      - { name: "Provolone", text: "Grated" }
+      - { name: "White cheddar", text: "Grated" }
+      - { name: "Parmesan", text: "Grated" }
 ---
 
 ## Prep
@@ -33,11 +32,11 @@ toppings:
 
 1. **Stretch** the dough ball to about 14 inches.
 2. **Top in this order:**
-   1. [[sauce]] BBQ sauce, spread thin, leaving the rim bare.
-   2. [[gouda]] smoked gouda, **straight on the sauce**.
-   3. [[chicken]] chicken and [[onion]] red onion.
-   4. [[group:Four-cheese blend]] four-cheese blend over everything, which keeps the chicken from drying out.
-   5. [[bacon]] bacon on top so it crisps.
+   1. BBQ sauce, spread thin, leaving the rim bare.
+   2. Smoked gouda, **straight on the sauce**.
+   3. Chicken and red onion.
+   4. Four-cheese blend over everything, which keeps the chicken from drying out.
+   5. Bacon on top so it crisps.
 
 ## Bake: home oven
 

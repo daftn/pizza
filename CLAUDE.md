@@ -27,6 +27,7 @@ Personal pizza recipe site for the owner and friends, live at https://daftn.gith
 - **Adding a recipe from someone else's site or video:** take ingredients and amounts as given, write the method **in your own words** (never copy their text), and credit + link the source at the top of the method. Flag any inconsistencies in the source rather than silently picking one.
 - **Doughs and pizzas are separate.** A dough page is dough only. Sauce, toppings, stretching and baking go on a pizza page that links to it with `uses_dough` (one slug or a list). Self-contained recipes go in `special`.
 - **Different ovens:** if the dough formula changes (e.g. outdoor vs home oven), make a separate dough recipe. If only the bake changes, use separate `## Bake: home oven` / `## Bake: outdoor oven` sections on the pizza page.
+- **No guessed amounts.** If the owner doesn't give an amount, use text like "A handful" or "Spread thin" instead of inventing grams. They'll add real numbers after testing.
 - **No calendar schedules.** No days of the week or clock times ("Sunday night", "9:35 PM"). Relative timing is fine ("3+ hours ahead", "after 48 hours").
 - **No brand-specific equipment in steps** (mixers, ovens). Describe it generically: "spiral mixer, low (~90 RPM)".
 - **Names:** the owner's friends name the pizzas, so titles change. Change `title:` only. Keep the filename (slug) stable, since it's the URL and what `uses_dough` points at. Renaming a slug means updating every `uses_dough` and `../slug/` link.

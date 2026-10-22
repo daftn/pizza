@@ -1,5 +1,5 @@
 ---
-title: Charlie's New York (Outdoor Oven)
+title: New York (Outdoor Oven)
 category: dough
 summary: Lean NY dough for a gas pizza oven. 62% hydration, no sugar, 3–4 day cold ferment, baked at 650–700°F.
 yield:
@@ -17,7 +17,7 @@ dough:
       - { id: salt, name: "Salt", g: 11.9, note: "Held back until after the first mix" }
 ---
 
-*From Charlie Anderson's [How to Make REAL NY-Style Pizza in an Outdoor Pizza Oven](https://www.youtube.com/watch?v=pzj8tjhq-2o). For a home oven, use [Charlie's New York (Home Oven)](../charlies-ny/).*
+*From Charlie Anderson's [How to Make REAL NY-Style Pizza in an Outdoor Pizza Oven](https://www.youtube.com/watch?v=pzj8tjhq-2o). For a home oven, use [New York (Home Oven)](../charlies-ny/).*
 
 ## Mix
 

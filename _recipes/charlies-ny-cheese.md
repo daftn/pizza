@@ -32,7 +32,7 @@ toppings:
 
 ## Bake: home oven
 
-Use [Charlie's New York (Home Oven)](../charlies-ny/).
+Use [New York (Home Oven)](../charlies-ny/).
 
 1. **Preheat for about 90 minutes at 550°F (287°C)** with a baking steel on the second-highest rack (a stone goes on the lowest rack). Take the dough out of the fridge when you start.
 2. **Bake 4–5 minutes**, until the cheese is fully melted and just starting to separate. Rotate halfway if you want.
@@ -42,7 +42,7 @@ Use [Charlie's New York (Home Oven)](../charlies-ny/).
 
 ## Bake: outdoor oven
 
-Use [Charlie's New York (Outdoor Oven)](../charlies-ny-outdoor/). Pull the dough 3+ hours ahead.
+Use [New York (Outdoor Oven)](../charlies-ny-outdoor/). Pull the dough 3+ hours ahead.
 
 1. **Target 650–700°F, for the oven *and* the stone.** 650°F gives a traditional, evenly browned crust; 700°F a more artisan look with some char on the edges. The oven's display only reads the air, so check the stone with an **infrared thermometer**.
 2. **Preheat slowly: medium-low flame for about 30 minutes.** Cranking it up scorches the stone's surface before the oven is saturated with heat. Done slowly, you can bake pizza after pizza with little recovery time. Once it's past 600°F, make final flame adjustments and start building.

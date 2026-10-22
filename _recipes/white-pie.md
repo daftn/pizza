@@ -1,7 +1,7 @@
 ---
 title: Ultimate Three-Cheese White
 category: pizza
-summary: Garlic olive oil, a crunchy parmesan and pecorino layer, two kinds of mozzarella and whipped ricotta clouds, finished with lemon zest.
+summary: Garlic olive oil, a crunchy parmesan and pecorino layer, two kinds of mozzarella and whipped ricotta clouds, finished with basil, black pepper and flaky salt.
 uses_dough: vitos-neapolitan
 
 toppings:
@@ -15,7 +15,6 @@ toppings:
       - { name: "Whole milk", text: "A tiny splash" }
       - { name: "Black pepper", text: "A pinch, cracked" }
       - { name: "Salt", text: "A pinch" }
-      - { name: "Lemon zest", text: "A little", note: "From the lemon you zest over the top" }
   - name: Cheese
     items:
       - { name: "Parmesan and Pecorino Romano", text: "A generous sprinkle", note: "Finely grated, about 70/30" }
@@ -24,9 +23,9 @@ toppings:
       - { name: "Basil", text: "A few leaves" }
   - name: After the bake
     items:
-      - { name: "Lemon zest", text: "A generous grating", note: "Don't skip it: it brightens the whole pie" }
-      - { name: "Black pepper", text: "Freshly cracked" }
-      - { name: "Flaky salt", text: "A pinch" }
+      - { name: "Black pepper", text: "Freshly cracked, over the ricotta" }
+      - { name: "Fresh basil", text: "A few leaves, torn" }
+      - { name: "Flaky sea salt", text: "A touch, on the rim" }
       - { name: "Hot honey", text: "Drizzle", optional: true }
 ---
 
@@ -34,7 +33,7 @@ toppings:
 
 1. **Dry the fresh mozzarella.** Tear each slice into 3–4 jagged, thumb-tip-sized chunks. Spread them on 3 layers of paper towels, pat the tops dry and leave them uncovered in the fridge for a few hours.
 2. **Make the garlic oil.** Stir the garlic into the olive oil and leave it at room temperature to infuse. Use it the same day; don't store garlic oil.
-3. **Whip the ricotta.** Stir the ricotta with a tiny splash of milk, a pinch of black pepper, a pinch of salt and a little lemon zest until smooth and fluffy. Taste it: it should taste seasoned, not like plain cream. Take it out of the fridge 30 minutes before building so it's not ice-cold in the middle after a short bake.
+3. **Whip the ricotta.** Stir the ricotta with a tiny splash of milk, a pinch of black pepper, and a pinch of salt until smooth and fluffy. Taste it: it should taste seasoned, not like plain cream. Take it out of the fridge 30 minutes before building so it's not ice-cold in the middle after a short bake.
 
 ## Build
 
@@ -58,4 +57,9 @@ For an oven with the flame along one side.
 
 ## Finish
 
-Rest 60 seconds on a wire rack so the steam escapes and the crust stays crisp. Then grate lemon zest over the top, add cracked black pepper and a pinch of flaky salt, and drizzle with hot honey if you like it sweet and spicy.
+Keep it clean: no lemon. The pecorino and black pepper already cut through the richness, so the garlic, cheeses and ricotta can stand on their own.
+
+1. **Basil right away.** Scatter torn fresh basil the moment the pizza lands on the wire rack.
+2. **Rest 60 seconds** so the steam escapes and the crust stays crisp.
+3. **Pepper and salt.** Crack black pepper over the ricotta dollops and add a touch of flaky sea salt on the rim.
+4. *Optional:* a drizzle of hot honey if you want it sweet and spicy.

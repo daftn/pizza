@@ -18,6 +18,7 @@ The filename is the recipe's slug and URL: `_recipes/neapolitan.md` becomes `/re
 |---|---|
 | `category` | `dough`, `pizza` or `special`. Decides the section on the landing page |
 | `summary` | One line shown on the card and under the title |
+| `fest_year`, `fest_theme` | Fear Fest pies only, e.g. `2026` and `Alfred Hitchcock`. Moves the pizza from Pizzas into the Fear Fest section (newest year first) and labels it with the year and theme |
 | `uses_dough` | Pizzas only. The slug of a dough recipe, or a list like `[charlies-ny, charlies-ny-outdoor]` |
 | `yield.count` | Balls / rounds in the batch as written (default 1) |
 | `yield.weight` | Optional ball weight. Defaults to total dough ÷ count. If the dough totals more than count × weight, the extra is treated as a bowl-loss buffer: it scales with the batch and is included in "Total dough", but isn't called out |

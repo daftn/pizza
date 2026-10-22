@@ -7,6 +7,7 @@ Personal pizza recipe site for the owner and friends, live at https://daftn.gith
 ## Layout
 
 - `_recipes/*.md`: one file per recipe. `category` is `dough`, `pizza` or `special` (self-contained, e.g. Boomsticks = `cheesesticks.md`).
+- **Fear Fest:** a friend's yearly horror-movie fest has a theme each year, and the owner makes one new pie for it. Those pizzas add `fest_year` and `fest_theme` and show in their own landing-page section (first: Vertigo, 2026, Alfred Hitchcock).
 - `_templates/`: starting points for new doughs and pizzas (not published).
 - `_layouts/recipe.html`: renders the header and dough links, embeds front matter as JSON in `#recipe-data`, and lists "Pizzas using this dough".
 - `assets/recipe.js`: calculator, ingredient tables, placeholder filling. Reads only `#recipe-data`.

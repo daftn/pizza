@@ -3,7 +3,7 @@ layout: default
 ---
 <article class="recipe">
   <header class="recipe-header">
-    <p class="eyebrow">{{ page.category | capitalize }}</p>
+    <p class="eyebrow">{% if page.fest_year %}Fear Fest {{ page.fest_year }} · {{ page.fest_theme }}{% else %}{{ page.category | capitalize }}{% endif %}</p>
     <h1>{{ page.title }}</h1>
     {% if page.summary %}<p class="summary">{{ page.summary }}</p>{% endif %}
     {% if page.uses_dough %}

@@ -4,7 +4,7 @@ category: pizza
 fest_year: 2026
 fest_theme: Alfred Hitchcock
 summary: A double spiral of neon-orange vodka sauce and green pesto on mozzarella and Muenster, with soppressata, pecorino and hot honey.
-uses_dough: [charlies-ny-outdoor, everyday-dough]
+uses_dough: everyday-dough
 
 toppings:
   - name: Vodka spiral
@@ -56,7 +56,7 @@ You'll need **two squeeze bottles** with the tips snipped to about a ¼-inch ope
 
 ## Bake: outdoor oven
 
-Use [New York (Outdoor Oven)](../charlies-ny-outdoor/) or [The Default](../everyday-dough/).
+Use [The Default](../everyday-dough/).
 
 1. **Preheat the stone to 700–750°F** on a medium-high flame.
 2. **Launch, then drop the flame to medium-low** so the cheese melts evenly and the vodka sauce caramelizes without scorching.

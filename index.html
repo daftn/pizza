@@ -7,7 +7,7 @@ layout: default
   <h1>{{ site.title }}</h1>
   <p>{{ site.description }}</p>
   {% if site.data.quotes %}
-    <div class="quotes">
+    <div class="quotes" role="button" tabindex="0" title="Tap for another quote" aria-label="Show another quote">
       {% for q in site.data.quotes %}
         <figure class="quote"{% unless forloop.first %} hidden{% endunless %}>
           <blockquote>“{{ q.text }}”</blockquote>
@@ -17,9 +17,17 @@ layout: default
     </div>
     <script>
       (function () {
-        const quotes = document.querySelectorAll(".quote");
-        const pick = Math.floor(Math.random() * quotes.length);
-        quotes.forEach((q, i) => (q.hidden = i !== pick));
+        const box = document.querySelector(".quotes");
+        const quotes = box.querySelectorAll(".quote");
+        let current = Math.floor(Math.random() * quotes.length);
+        const show = () => quotes.forEach((q, i) => (q.hidden = i !== current));
+        // Click, tap or Enter/Space shows the next quote, looping back to the first.
+        const next = () => { current = (current + 1) % quotes.length; show(); };
+        box.addEventListener("click", next);
+        box.addEventListener("keydown", (e) => {
+          if (e.key === "Enter" || e.key === " ") { e.preventDefault(); next(); }
+        });
+        show();
       })();
     </script>
   {% endif %}

@@ -1,5 +1,5 @@
 ---
-title: Chestburster
+title: Klaatu Burrata Pizza
 category: pizza
 summary: Smoked and fresh mozzarella with baby heirloom tomatoes, finished with prosciutto, arugula and a torn-open burrata.
 uses_dough: vitos-neapolitan

@@ -1,5 +1,5 @@
 ---
-title: BBQ Chicken
+title: Yippee-Ki-Yay
 category: pizza
 summary: Hickory BBQ sauce, smoked gouda straight on the sauce, chicken, bacon and red onion under a four-cheese blend, finished with cilantro.
 uses_dough: [everyday-dough, charlies-ny, charlies-ny-outdoor]

@@ -1,5 +1,5 @@
 ---
-title: Curry Chicken
+title: Kill Bill
 category: pizza
 summary: Curry sauce, mozzarella, roasted chicken, yellow bell pepper, tomato and red onion, finished with lime, basil and cilantro.
 uses_dough: [everyday-dough, charlies-ny, charlies-ny-outdoor]

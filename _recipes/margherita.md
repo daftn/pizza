@@ -1,7 +1,7 @@
 ---
 title: Classic Margherita
 category: pizza
-summary: Hand-crushed tomato, fresh mozzarella, pecorino and basil on Neapolitan dough.
+summary: "The OG. No fancy name needed: hand-crushed tomato, fresh mozzarella, pecorino and basil on Neapolitan dough."
 uses_dough: vitos-neapolitan
 
 toppings:

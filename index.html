@@ -31,7 +31,11 @@ layout: default
     {%- comment -%} Fear Fest pies are pizzas with fest_year; newest year first {%- endcomment -%}
     {%- assign recipes = site.recipes | where_exp: "r", "r.fest_year" | sort: "fest_year" | reverse -%}
   {%- else -%}
-    {%- assign recipes = site.recipes | where: "category", parts[0] | where_exp: "r", "r.fest_year == nil" | sort: "title" -%}
+    {%- comment -%} Recipes with `pin` (1, 2, …) come first in that order; the rest are alphabetical {%- endcomment -%}
+    {%- assign in_section = site.recipes | where: "category", parts[0] | where_exp: "r", "r.fest_year == nil" -%}
+    {%- assign pinned = in_section | where_exp: "r", "r.pin" | sort: "pin" -%}
+    {%- assign unpinned = in_section | where_exp: "r", "r.pin == nil" | sort: "title" -%}
+    {%- assign recipes = pinned | concat: unpinned -%}
   {%- endif -%}
   <section class="index-section">
     <h2>{{ parts[1] }}</h2>

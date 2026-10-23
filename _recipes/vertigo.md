@@ -25,7 +25,7 @@ toppings:
     items:
       - { id: mozz, name: "Low-moisture mozzarella", qty: 170, unit: g, note: "Shredded. Half whole-milk, half part-skim keeps the fat down so the spiral lines stay sharp" }
       - { id: provolone, name: "Mild (dolce) provolone", qty: 55, unit: g, note: "Shredded. Holds the spiral lines better than Muenster. Muenster works too: trim the orange rind" }
-      - { id: sopp, name: "Mild soppressata", qty: [70, 85], unit: g, note: "Thin-sliced rounds, cut into ½-inch strips (see the build)" }
+      - { id: sopp, name: "Mild soppressata", qty: [70, 85], unit: g, note: "Thin-sliced rounds, cut into quarters or strips" }
       - { name: "Semolina", text: "For the peel" }
   - name: After the bake
     items:
@@ -49,10 +49,10 @@ You'll need **two squeeze bottles** with the tips snipped to about a ¼-inch ope
 ## Build: cheese first
 
 1. **Stretch** a 380–420g dough ball to 14 inches with a defined rim, and move it to a peel dusted with semolina. (In the dough calculator, set grams each to about 400.)
-2. **Cheese.** Scatter the [[mozz]] mozzarella and [[provolone]] provolone evenly, stopping about ½ inch short of the rim. Cheese on the crust edge burns and flattens the rim. Going cheese-first keeps moisture off the dough and makes a flat white canvas for the spiral.
-3. **Soppressata.** Stack 5–6 rounds of the [[sopp]] soppressata and cut them into strips about ½ inch wide. The curved strips from the edges follow the spiral nicely. Lay them end to end, overlapping a little, in a spiral from the center out, leaving **2–2½ inches** between the rings (room for the sauce line plus the pesto track).
-4. **Pipe the orange spiral.** Starting in the dead center, squeeze one steady, continuous ribbon of vodka sauce right **alongside** the soppressata, touching its inner edge but on the cheese, not on the meat. The sauce caramelizes into the cheese, and the meat stays exposed so it crisps.
-   - That leaves about **1–1½ inches of white cheese** between each orange line and the next ring of soppressata: that's the track for the green spiral.
+2. **Cheese.** Mix the [[mozz]] mozzarella and [[provolone]] provolone and hold back about a third. Scatter the rest evenly, stopping about ½ inch short of the rim. Cheese on the crust edge burns and flattens the rim. Going cheese-first keeps moisture off the dough.
+3. **Soppressata.** Cut the [[sopp]] soppressata into quarters or strips and scatter it fairly sparsely over the cheese.
+4. **Cover.** Sprinkle the held-back cheese over the top so the meat is mostly covered, with some edges peeking out. The cheese holds the meat in place, keeps its fat from tinting the canvas, and the exposed edges still crisp.
+5. **Pipe the orange spiral.** Starting in the dead center, squeeze one steady, continuous ribbon of vodka sauce, spiraling out to the rim. Leave **1–1½ inches** between the rings: that's the track for the green spiral after the bake.
 
 ## Bake: outdoor oven
 

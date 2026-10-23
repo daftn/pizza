@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{% if page.title %}{{ page.title }} · {% endif %}{{ site.title }}</title>
-  <meta name="description" content="{{ page.summary | default: site.description }}">
+  <meta name="description" content="{{ page.summary | default: site.intro }}">
   <script>
     // Apply the saved theme before first paint so there's no flash.
     try {
@@ -19,7 +19,9 @@
 </head>
 <body>
   <header class="site-header">
-    <a class="site-title" href="{{ '/' | relative_url }}">{{ site.title }}</a>
+    <a class="site-title" href="{{ '/' | relative_url }}" aria-label="{{ site.title }}, home">
+      <span aria-hidden="true">🍕</span><span class="logo-plus" aria-hidden="true">+</span><svg class="logo-bench" viewBox="0 0 32 24" aria-hidden="true" focusable="false"><path d="M8 3h16M8 7.5h16M8 3v9M24 3v9M2 12h28M2 16h28M7 16l-3 6M25 16l3 6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </a>
     <button type="button" class="theme-toggle" aria-label="Toggle dark mode"></button>
   </header>
   <main>

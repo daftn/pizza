@@ -60,8 +60,6 @@ You'll need **two squeeze bottles** with the tips snipped to about a ¼-inch ope
 
 ## Bake: outdoor oven
 
-Use [The Default](../everyday-dough/).
-
 1. **Preheat the stone to 700–750°F** on a medium-high flame.
 2. **Launch, then drop the flame to medium-low** so the cheese melts evenly and the vodka sauce caramelizes without scorching.
 3. **Turn every 30–45 seconds** for a 3–4 minute bake, until the rim is blistered and the soppressata edges are crisp and sizzling.

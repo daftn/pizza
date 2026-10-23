@@ -12,7 +12,7 @@
   --warn: #c0392b;
   --grain: 0.06;
   --radius: 10px;
-  --logo: "Rye", Georgia, serif;                               /* site name only */
+  --logo: "Pirata One", "UnifrakturCook", Georgia, serif;     /* site name only */
   --section: "Anton", Impact, "Arial Narrow", sans-serif;      /* h2: page sections, set in caps */
   --display: "Oswald", "Arial Narrow", sans-serif;             /* every other heading: pie names, h1, h3 */
   --sans: "Inter", system-ui, -apple-system, sans-serif;
@@ -100,7 +100,7 @@ h3 { font-size: 1.4rem; margin: 0; }
 }
 .site-title {
   font-family: var(--logo);
-  font-size: clamp(1.1rem, 5vw, 1.6rem);   /* Rye is wide: keep it on one line next to the toggle on a phone */
+  font-size: 1.6rem;
   white-space: nowrap;
   color: var(--text);
   text-decoration: none;

@@ -41,7 +41,7 @@ Personal pizza recipe site for the owner and friends, live at https://daftn.gith
 - **Movie pairings:** every pizza has a `pairs_with` box (movie, year, one-line why), a mix of same-name and different picks. The Director's Cut is the owner's favorite pizza; it pairs with their favorite movie, The Mummy (1999).
 - **Sources whose batch is bigger than their stated yield** (Gozney book doughs): keep the percentages but scale the batch to the stated balls plus a ~2% buffer, and say so in a note on the page. Small overages (Leo's, ~45g) stay as written.
 - **Fresh → instant yeast:** divide by 3.
-- **Vibe:** grindhouse / cult movie night (horror, action, Tarantino, Edgar Wright), but readable: bone-colored light mode, charcoal (not pure black) dark mode, blood-red accent. Site name in Rye, section headers (`h2`) in Anton caps, pie names and other headings in Oswald, body in Inter, labels in IBM Plex Mono.
+- **Vibe:** grindhouse / cult movie night (horror, action, Tarantino, Edgar Wright), but readable: bone-colored light mode, charcoal (not pure black) dark mode, blood-red accent. Site name in Pirata One, section headers (`h2`) in Anton caps, pie names and other headings in Oswald, body in Inter, labels in IBM Plex Mono.
 
 ## Workflow
 

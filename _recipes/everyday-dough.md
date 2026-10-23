@@ -1,6 +1,7 @@
 ---
 title: The Default
 category: dough
+pin: 1                 # listed first under Doughs
 summary: The forgiving go-to. 60% hydration, a little olive oil, 24–48 hour cold ferment.
 yield:
   count: 4              # four 14-inch pies as written below

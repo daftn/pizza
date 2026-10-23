@@ -1,7 +1,7 @@
 ---
 title: Vito's Neapolitan
 category: dough
-summary: "Modern Neapolitan: overnight poolish, 00 plus 42% bread or Manitoba flour, 68% hydration, spiral-mixed with a bassinage finish."
+summary: "Modern Neapolitan: overnight poolish, 00 plus 42% bread or Manitoba flour, 68% hydration."
 yield:
   count: 6              # the batch as written below
   weight: 280           # 6 × 280g = 1,680g; the extra 35g is a bowl-loss buffer

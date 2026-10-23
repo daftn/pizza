@@ -1,7 +1,7 @@
 ---
 title: Leo's Neapolitan
 category: dough
-summary: Authentic, VPN-approved Naples dough, mixed by hand. 59% hydration and a tiny bit of yeast for one long ferment at room temperature, never refrigerated.
+summary: "Closest to the classic Naples (VPN) standard: 00 flour only, 59% hydration, a pinch of yeast, mixed by hand and fermented at room temperature, never refrigerated."
 yield:
   count: 15             # the batch as written below
   weight: 180           # 15 × 180g = 2,700g; the extra ~45g is a bowl-loss buffer

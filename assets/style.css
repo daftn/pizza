@@ -315,7 +315,8 @@ td small { display: block; color: var(--muted); font-size: 0.8rem; line-height: 
 
 /* Method */
 
-.method h2 { border-top: 1px solid var(--line); padding-top: 24px; }
+/* Step headings (Prep, Build, Bake) in Oswald, sentence case: Anton caps read too loud this often */
+.method h2 { font-family: var(--display); font-weight: 700; text-transform: none; letter-spacing: 0; font-size: 1.6rem; border-top: 1px solid var(--line); padding-top: 24px; }
 .method li { margin-bottom: 10px; }
 .method li > ul { margin-top: 8px; }
 /* .qty scales with the calculator; .qty-fixed is a per-pizza amount that doesn't. */

@@ -12,8 +12,9 @@
   --warn: #c0392b;
   --grain: 0.06;
   --radius: 10px;
-  --logo: "Pirata One", "UnifrakturCook", Georgia, serif;     /* site name only */
-  --display: "Texturina", "Pirata One", Georgia, serif;        /* every other heading */
+  --logo: "Rye", Georgia, serif;                               /* site name only */
+  --section: "Anton", Impact, "Arial Narrow", sans-serif;      /* h2: page sections, set in caps */
+  --display: "Oswald", "Arial Narrow", sans-serif;             /* every other heading: pie names, h1, h3 */
   --sans: "Inter", system-ui, -apple-system, sans-serif;
   --mono: "IBM Plex Mono", ui-monospace, monospace;
   color-scheme: light;
@@ -79,7 +80,8 @@ main {
 
 a { color: var(--accent); }
 
-h1, h2, h3 { font-family: var(--display); font-weight: 700; line-height: 1.1; letter-spacing: -0.005em; }
+h1, h2, h3 { font-family: var(--display); font-weight: 700; line-height: 1.1; }
+h2 { font-family: var(--section); font-weight: 400; text-transform: uppercase; letter-spacing: 0.01em; }
 .intro h1 { font-family: var(--logo); font-weight: 400; letter-spacing: 0.01em; }
 h1 { font-size: clamp(2.4rem, 8vw, 3.5rem); margin: 0 0 8px; }
 h2 { font-size: 1.9rem; margin: 40px 0 12px; }
@@ -98,7 +100,8 @@ h3 { font-size: 1.4rem; margin: 0; }
 }
 .site-title {
   font-family: var(--logo);
-  font-size: 1.6rem;
+  font-size: clamp(1.1rem, 5vw, 1.6rem);   /* Rye is wide: keep it on one line next to the toggle on a phone */
+  white-space: nowrap;
   color: var(--text);
   text-decoration: none;
 }
@@ -110,6 +113,7 @@ h3 { font-size: 1.4rem; margin: 0; }
   background: var(--surface);
   border: 1px solid var(--line);
   border-radius: 99px;
+  white-space: nowrap;
   cursor: pointer;
 }
 .theme-toggle:hover { color: var(--accent); border-color: var(--accent); }
@@ -133,7 +137,7 @@ h3 { font-size: 1.4rem; margin: 0; }
 .quotes { cursor: pointer; user-select: none; -webkit-tap-highlight-color: transparent; }
 .quotes:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; }
 .quote { margin: 24px 0 0; padding: 12px 0 12px 18px; border-left: 4px solid var(--accent); }
-.quote blockquote { margin: 0; font-family: var(--display); font-weight: 500; font-style: italic; font-size: clamp(1.3rem, 4vw, 1.6rem); line-height: 1.25; }
+.quote blockquote { margin: 0; font-family: var(--display); font-weight: 500; font-size: clamp(1.3rem, 4vw, 1.6rem); line-height: 1.25; }
 .quote figcaption { margin-top: 6px; color: var(--muted); font: 500 0.8rem var(--mono); letter-spacing: 0.06em; text-transform: uppercase; }
 
 .section-note { color: var(--muted); margin: -8px 0 16px; }

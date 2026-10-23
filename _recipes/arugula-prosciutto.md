@@ -6,7 +6,7 @@ pairs_with:
   movie: "The Silence of the Lambs"
   year: 1991
   why: "With some fava beans and a nice Chianti."
-uses_dough: vitos-neapolitan
+uses_dough: [vitos-neapolitan, leo-neapolitan]
 
 toppings:
   - name: Before the bake

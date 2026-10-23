@@ -8,7 +8,7 @@ pairs_with:
   movie: "The Godfather"
   year: 1972
   why: "The OG. Leave the gun, take the Margherita."
-uses_dough: vitos-neapolitan
+uses_dough: [leo-neapolitan, vitos-neapolitan]
 
 toppings:
   - name: Sauce

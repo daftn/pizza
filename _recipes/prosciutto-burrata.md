@@ -6,7 +6,7 @@ pairs_with:
   movie: "Army of Darkness"
   year: 1992
   why: "Say the words right this time."
-uses_dough: vitos-neapolitan
+uses_dough: [vitos-neapolitan, leo-neapolitan]
 
 toppings:
   - name: Before the bake

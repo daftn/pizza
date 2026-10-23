@@ -6,7 +6,7 @@ pairs_with:
   movie: "Shaun of the Dead"
   year: 2004
   why: "A zombie comedy and a pint."
-uses_dough: vitos-neapolitan
+uses_dough: [vitos-neapolitan, leo-neapolitan]
 
 toppings:
   - name: Garlic oil

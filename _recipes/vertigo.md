@@ -4,6 +4,10 @@ category: pizza
 fest_year: 2026
 fest_theme: Alfred Hitchcock
 summary: A double spiral of neon-orange vodka sauce and green pesto on mozzarella and provolone, with soppressata, pecorino and hot honey.
+pairs_with:
+  movie: "Vertigo"
+  year: 1958
+  why: "The Fear Fest pick. Don't look down."
 uses_dough: everyday-dough
 
 toppings:

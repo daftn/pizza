@@ -2,6 +2,10 @@
 title: Scream Cheese
 category: pizza
 summary: Pepperoni and dollops of cream cheese on the Mozzferatu sauce and mozzarella.
+pairs_with:
+  movie: "Scream"
+  year: 1996
+  why: "Do you like scary pizzas?"
 uses_dough: everyday-dough
 
 toppings:

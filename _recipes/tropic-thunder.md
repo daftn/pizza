@@ -2,6 +2,10 @@
 title: Tropic Thunder
 category: pizza
 summary: Canadian bacon and pineapple with a simple oregano sauce and plenty of mozzarella. Jalapeño optional for the thunder.
+pairs_with:
+  movie: "Predator"
+  year: 1987
+  why: "More jungle, more chaos."
 uses_dough: everyday-dough
 
 toppings:

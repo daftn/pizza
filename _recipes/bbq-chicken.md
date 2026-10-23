@@ -2,6 +2,10 @@
 title: Yippee-Ki-Yay
 category: pizza
 summary: Hickory BBQ sauce, smoked gouda straight on the sauce, chicken, bacon and red onion under a four-cheese blend, finished with cilantro.
+pairs_with:
+  movie: "Die Hard"
+  year: 1988
+  why: "Obviously."
 uses_dough: [everyday-dough, charlies-ny, charlies-ny-outdoor]
 
 toppings:

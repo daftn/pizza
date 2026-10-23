@@ -18,6 +18,12 @@ layout: default
         {% endfor %}
       </p>
     {% endif %}
+    {% if page.pairs_with %}
+      <p class="pairs-with">
+        <span class="pairs-label">🎬 Pairs well with</span>
+        <span class="pairs-movie">{{ page.pairs_with.movie }}</span>{% if page.pairs_with.year %} <span class="pairs-year">({{ page.pairs_with.year }})</span>{% endif %}{% if page.pairs_with.why %}<span class="pairs-why">{{ page.pairs_with.why }}</span>{% endif %}
+      </p>
+    {% endif %}
   </header>
 
   {% if page.photo %}

@@ -2,6 +2,10 @@
 title: Boomsticks
 category: special
 summary: "Hail to the cheese, baby. Utah-style fat sticks: 48-hour cold ferment, high-loft screen proof, shielded steel bake."
+pairs_with:
+  movie: "Evil Dead II"
+  year: 1987
+  why: "Groovy."
 yield:
   count: 2
   unit: round

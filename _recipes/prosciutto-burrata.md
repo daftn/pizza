@@ -2,6 +2,10 @@
 title: Klaatu Burrata Nikto
 category: pizza
 summary: Smoked and fresh mozzarella with baby heirloom tomatoes, finished with prosciutto, arugula and a torn-open burrata.
+pairs_with:
+  movie: "Army of Darkness"
+  year: 1992
+  why: "Say the words right this time."
 uses_dough: vitos-neapolitan
 
 toppings:

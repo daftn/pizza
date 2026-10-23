@@ -2,6 +2,10 @@
 title: Mozzferatu
 category: pizza
 summary: The classic New York slice. Sweet oregano sauce, pecorino and whole-milk mozzarella, in a home oven or an outdoor oven.
+pairs_with:
+  movie: "What We Do in the Shadows"
+  year: 2014
+  why: "Vampires, and a horror comedy."
 uses_dough: [charlies-ny, charlies-ny-outdoor]
 
 toppings:

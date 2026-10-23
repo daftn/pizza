@@ -192,6 +192,25 @@ h3 { font-size: 1.4rem; margin: 0; }
   border-radius: 4px;
 }
 
+/* Movie pairing under the recipe title */
+
+.pairs-with {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 2px 6px;
+  margin: 12px 0 0;
+  padding: 10px 12px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-left: 4px solid var(--accent);
+  border-radius: 4px;
+}
+.pairs-label { flex-basis: 100%; font: 600 0.7rem var(--mono); text-transform: uppercase; letter-spacing: 0.08em; color: var(--accent); }
+.pairs-movie { font-family: var(--display); font-weight: 700; font-size: 1.2rem; }
+.pairs-year { color: var(--muted); font-size: 0.9rem; }
+.pairs-why { flex-basis: 100%; color: var(--muted); font-size: 0.95rem; }
+
 /* Recipe header */
 
 .recipe-header { padding: 16px 0 8px; }

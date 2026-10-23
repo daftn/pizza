@@ -4,6 +4,10 @@ category: pizza
 pin: 1                 # listed first under Pizzas
 photo: margherita.jpg
 summary: "The OG. No fancy name needed: hand-crushed tomato, fresh mozzarella, pecorino and basil on Neapolitan dough."
+pairs_with:
+  movie: "The Godfather"
+  year: 1972
+  why: "The OG. Leave the gun, take the Margherita."
 uses_dough: vitos-neapolitan
 
 toppings:

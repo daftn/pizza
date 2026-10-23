@@ -2,6 +2,10 @@
 title: Dr. Hamnibal Lecter
 category: pizza
 summary: White pie with fresh mozzarella, topped after the bake with prosciutto, lemony arugula, shaved parmesan and balsamic glaze.
+pairs_with:
+  movie: "The Silence of the Lambs"
+  year: 1991
+  why: "With some fava beans and a nice Chianti."
 uses_dough: vitos-neapolitan
 
 toppings:

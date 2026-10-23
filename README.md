@@ -18,6 +18,7 @@ The filename is the recipe's slug and URL: `_recipes/neapolitan.md` becomes `/re
 |---|---|
 | `category` | `dough`, `pizza` or `special`. Decides the section on the landing page |
 | `photo` | Optional. A file in `assets/photos/`, like `margherita.jpg`. Shows under the title and as the card thumbnail. Make it with `python3 _tools/add_photo.py photo.jpg <slug>`, which squares it, shrinks it, makes the `-thumb` version and strips location data |
+| `card_photo` | Optional. `false` keeps the photo on the recipe page but off its landing-page card |
 | `pairs_with` | Optional movie pairing shown under the title: `movie`, `year` and a one-line `why` |
 | `family` | Doughs only. A shared style name, like `New York` or `Neapolitan`. Pizza cards on the landing page show this once instead of every version ("on The Default or Neapolitan") |
 | `pin` | Optional. Lists the recipe first in its section on the landing page; `1` comes before `2`, and the rest stay alphabetical |

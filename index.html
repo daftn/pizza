@@ -52,9 +52,11 @@ layout: default
       <ul class="card-list">
         {% for r in recipes %}
           <li>
-            <a class="card{% if r.photo %} has-photo{% endif %}" href="{{ r.url | relative_url }}">
-              {%- if r.photo -%}
-                {%- assign thumb = r.photo | replace: ".jpg", "-thumb.jpg" -%}
+            {%- assign card_photo = r.photo -%}
+            {%- if r.card_photo == false -%}{%- assign card_photo = nil -%}{%- endif %}
+            <a class="card{% if card_photo %} has-photo{% endif %}" href="{{ r.url | relative_url }}">
+              {%- if card_photo -%}
+                {%- assign thumb = card_photo | replace: ".jpg", "-thumb.jpg" -%}
                 <img class="card-photo" src="{{ '/assets/photos/' | append: thumb | relative_url }}" alt="" width="600" height="600" loading="lazy">
               {%- endif %}
               {% if r.fest_year %}<span class="card-badge">{{ r.fest_year }} · {{ r.fest_theme }}</span>{% endif %}

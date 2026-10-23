@@ -1,6 +1,6 @@
 # Pizza site
 
-Personal pizza recipe site for the owner and friends, live at https://daftn.github.io/pizza/ (GitHub Pages, deploys from `main` / root about a minute after each push). Plain Jekyll, no theme or plugins: markdown recipes with YAML front matter, two layouts, one CSS file and one vanilla JS file.
+Personal pizza recipe site for the owner and friends, live at https://pizza.boomstick.cc/ (custom domain via `CNAME`; GitHub Pages, deploys from `main` / root about a minute after each push). Plain Jekyll, no theme or plugins: markdown recipes with YAML front matter, two layouts, one CSS file and one vanilla JS file.
 
 **Read `README.md` first.** It is the reference for the recipe front matter (`dough`, `toppings`, `yield`, `uses_dough`, `per_batch`, …) and the `[[placeholder]]` syntax. Keep it up to date when you add a feature.
 
@@ -13,7 +13,7 @@ Personal pizza recipe site for the owner and friends, live at https://daftn.gith
 - `assets/recipe.js`: calculator, ingredient tables, placeholder filling. Reads only `#recipe-data`.
 - `assets/style.css`: the whole look. Color tokens at the top, with a light set and a dark set (the dark set appears twice: the `prefers-color-scheme` block and `[data-theme="dark"]`; keep them in sync).
 - `_data/quotes.yml`: random quote on the landing page. Turned off for now (`show_quotes: false` in `_config.yml`); set it to `true` to bring it back.
-- `_config.yml`: `baseurl: "/pizza"` is required for the project site. Don't remove it. The site is named **Grindhouse Pies** (`title`; was Hail to the Pie), tagline in `description`.
+- `_config.yml`: `baseurl: ""` because the site is served at the root of its custom domain. Setting it back to `"/pizza"` breaks all styling there (only needed if the custom domain is dropped and the site goes back to daftn.github.io/pizza/). Don't delete `CNAME`. The site is named **Grindhouse Pies** (`title`; was Hail to the Pie), tagline in `description`.
 - `index.html`: landing page. Sections: Doughs, Pizzas, Fear Fest Pies, Specials. Order within a section: `pin` (1, 2, …) first, then alphabetical. Doughs are pinned in style order (The Default 1, Leo's 2, Vito's 3, New York home 4, New York outdoor 5, Roman 6); give a new dough a pin. Pizza cards show the dough's `family` (e.g. "on The Default or Neapolitan"). Tapping the quote cycles to the next one.
 - `assets/photos/`: recipe photos (`photo:` in front matter). Make them with `python3 _tools/add_photo.py <photo> <slug>`; it squares, shrinks and strips metadata, including GPS. Never add a raw phone photo.
 - `_layouts/default.html` and `recipe.html` load CSS/JS with `?v=<build time>` so phones don't keep a stale stylesheet after a deploy.
@@ -47,8 +47,8 @@ Personal pizza recipe site for the owner and friends, live at https://daftn.gith
 
 - Commit when a change is done. **Ask before pushing**: a push publishes to the live site. The owner usually answers "push it". Flow used so far: commit on the session's working branch and push it, then on the owner's OK fast-forward `main` with `git push origin HEAD:main` (check `git merge-base --is-ancestor origin/main HEAD` first).
 - Before committing a recipe, check that every `[[placeholder]]` matches an `id` (or `count`, `weight`, `total`, `group:Name`, `table:Name`), that every `uses_dough` slug exists, and that flour/water flags are set.
-- To preview: `bundle install && bundle exec jekyll serve` (needs Ruby 3.x), then open http://localhost:4000/pizza/. After a push, confirm the live page updated, e.g. by curling it and checking for the change.
-- **In a Claude Code cloud session:** the `jekyll` binstub may be missing; build with `LANG=C.UTF-8 LC_ALL=C.UTF-8 bundle exec ruby -e 'load Gem.bin_path("jekyll","jekyll")' build -d <dir>` and serve the output under a `pizza/` folder with `python3 -m http.server` to check pages in Playwright. The live site (github.io) is usually unreachable from the sandbox, so check the deploy in GitHub Actions instead (the "pages build and deployment" run for the pushed commit).
+- To preview: `bundle install && bundle exec jekyll serve` (needs Ruby 3.x), then open http://localhost:4000/. After a push, confirm the live page updated, e.g. by curling it and checking for the change.
+- **In a Claude Code cloud session:** the `jekyll` binstub may be missing; build with `LANG=C.UTF-8 LC_ALL=C.UTF-8 bundle exec ruby -e 'load Gem.bin_path("jekyll","jekyll")' build -d <dir>` and serve the output folder with `python3 -m http.server` to check pages in Playwright. The live site (github.io) is usually unreachable from the sandbox, so check the deploy in GitHub Actions instead (the "pages build and deployment" run for the pushed commit).
 - Summaries for the owner should be short and plain. They read on a phone.
 
 ## Open ideas (not built yet)

@@ -4,9 +4,10 @@ description: Doughs, pies and a calculator that scales every batch. Groovy.
 # Random quote under the tagline on the landing page (from _data/quotes.yml).
 show_quotes: false
 
-# For a project site (username.github.io/pizza) set this to "/pizza".
+# Served from the custom domain pizza.boomstick.cc (see CNAME), so no baseurl.
+# For a project site without a custom domain (username.github.io/pizza) set this to "/pizza".
 # For a user site or custom domain leave it empty.
-baseurl: "/pizza"
+baseurl: ""
 
 markdown: kramdown
 kramdown:

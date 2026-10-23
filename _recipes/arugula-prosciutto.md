@@ -1,11 +1,11 @@
 ---
-title: Dr. Hamnibal Lecter
+title: "The Director's Cut"
 category: pizza
-summary: White pie with fresh mozzarella, topped after the bake with prosciutto, lemony arugula, shaved parmesan and balsamic glaze.
+summary: "My favorite pizza. A white pie with fresh mozzarella, topped after the bake with prosciutto, lemony arugula, shaved parmesan and balsamic glaze."
 pairs_with:
-  movie: "The Silence of the Lambs"
-  year: 1991
-  why: "With some fava beans and a nice Chianti."
+  movie: "The Mummy"
+  year: 1999
+  why: "My favorite pizza, my favorite movie."
 uses_dough: [vitos-neapolitan, leo-neapolitan]
 
 toppings:

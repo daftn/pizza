@@ -21,7 +21,7 @@ layout: default
     {% if page.pairs_with %}
       <p class="pairs-with">
         <span class="pairs-label">🎬 Pairs well with</span>
-        <span class="pairs-movie">{{ page.pairs_with.movie }}</span>{% if page.pairs_with.year %} <span class="pairs-year">({{ page.pairs_with.year }})</span>{% endif %}{% if page.pairs_with.why %}<span class="pairs-why">{{ page.pairs_with.why }}</span>{% endif %}
+        <span class="pairs-movie">{{ page.pairs_with.movie }}</span>{% if page.pairs_with.year %} <span class="pairs-year">({{ page.pairs_with.year }})</span>{% endif %}{% if page.pairs_with.why %}<span class="pairs-sep"> – </span><span class="pairs-why">{{ page.pairs_with.why }}</span>{% endif %}
       </p>
     {% endif %}
   </header>
@@ -57,4 +57,4 @@ layout: default
 <script id="recipe-data" type="application/json">
 {"scale": {{ page.scale | default: "balls" | jsonify }}, "yield": {{ page.yield | jsonify }}, "dough": {{ page.dough | jsonify }}, "toppings": {{ page.toppings | jsonify }}}
 </script>
-<script src="{{ '/assets/recipe.js' | relative_url }}"></script>
+<script src="{{ '/assets/recipe.js' | relative_url }}?v={{ site.time | date: '%s' }}"></script>

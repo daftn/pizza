@@ -209,6 +209,7 @@ h3 { font-size: 1.4rem; margin: 0; }
 .pairs-label { flex-basis: 100%; font: 600 0.7rem var(--mono); text-transform: uppercase; letter-spacing: 0.08em; color: var(--accent); }
 .pairs-movie { font-family: var(--display); font-weight: 700; font-size: 1.2rem; }
 .pairs-year { color: var(--muted); font-size: 0.9rem; }
+.pairs-sep { display: none; }
 .pairs-why { flex-basis: 100%; color: var(--muted); font-size: 0.95rem; }
 
 /* Recipe header */

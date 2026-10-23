@@ -1,6 +1,7 @@
 ---
 title: Leo's Neapolitan
 category: dough
+family: Neapolitan          # name shown on pizza cards
 pin: 2
 summary: "Closest to the classic Naples (VPN) standard: 00 flour only, 59% hydration, a pinch of yeast, mixed by hand and fermented at room temperature, never refrigerated."
 yield:

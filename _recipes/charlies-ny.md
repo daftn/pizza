@@ -1,6 +1,7 @@
 ---
 title: New York (Home Oven)
 category: dough
+family: New York          # name shown on pizza cards
 pin: 4
 summary: Classic NY dough with a touch of whole grain, 2–3 day cold ferment, baked on a steel at 550°F.
 yield:

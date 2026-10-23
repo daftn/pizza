@@ -62,11 +62,11 @@ layout: default
               {% if r.summary %}<span class="card-summary">{{ r.summary }}</span>{% endif %}
               {% if r.uses_dough %}
                 {%- assign slugs = r.uses_dough | join: "," | split: "," -%}
-                {%- comment -%} Oven variants share a name on the card: "New York (Home Oven)" and "New York (Outdoor Oven)" both show as "New York" {%- endcomment -%}
+                {%- comment -%} Doughs of the same style share a card name via `family`: both New Yorks show as "New York", both Neapolitans as "Neapolitan" {%- endcomment -%}
                 {%- assign dough_names = "" | split: "" -%}
                 {%- for slug in slugs -%}
                   {%- assign base = site.recipes | where: "slug", slug | first -%}
-                  {%- assign short = base.title | default: slug | split: " (" | first -%}
+                  {%- assign short = base.family | default: base.title | default: slug -%}
                   {%- assign dough_names = dough_names | push: short -%}
                 {%- endfor %}
                 <span class="card-meta">on {{ dough_names | uniq | join: " or " }}</span>

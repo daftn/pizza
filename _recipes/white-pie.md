@@ -1,11 +1,11 @@
 ---
-title: White Zombie
+title: Great White
 category: pizza
 summary: Garlic olive oil, a crunchy parmesan and pecorino layer, two kinds of mozzarella and whipped ricotta clouds, finished with basil, black pepper, flaky salt and balsamic glaze.
 pairs_with:
-  movie: "Shaun of the Dead"
-  year: 2004
-  why: "A zombie comedy and a pint."
+  movie: "Jaws"
+  year: 1975
+  why: "You're gonna need a bigger pie."
 uses_dough: [vitos-neapolitan, leo-neapolitan]
 
 toppings:

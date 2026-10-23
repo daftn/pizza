@@ -5,7 +5,7 @@ description: Doughs, pies and a calculator that scales every batch. Groovy.
 show_quotes: false
 
 # Served from the custom domain pizza.boomstick.cc (see CNAME), so no baseurl.
-# For a project site without a custom domain (username.github.io/pizza) set this to "/pizza".
+# For a project site without a custom domain (username.github.io/pies) set this to "/pies".
 # For a user site or custom domain leave it empty.
 baseurl: ""
 

@@ -28,6 +28,7 @@
   const refWeight = yieldInfo.weight || (refTotal ? refTotal / refCount : 0);
   // Dough written beyond count × weight is a bowl-loss buffer; it scales along with the batch but isn't shown.
   const defaultCount = yieldInfo.default_count || refCount;
+  const defaultWeight = yieldInfo.default_weight || refWeight;
   // Optional `yield.sizes` ({ inches: grams per ball }) for size buttons and the "Makes" size.
   const sizes = Object.entries(yieldInfo.sizes || {})
     .map(([inches, g]) => ({ inches: parseFloat(inches), g }))
@@ -44,7 +45,7 @@
   // Pizza pages (toppings only) have no calculator: amounts are for one pizza.
   const state = {
     count: doughGroups.length ? num(params.get("count"), defaultCount) : defaultCount,
-    weight: num(params.get("weight"), refWeight),
+    weight: num(params.get("weight"), defaultWeight),
     mult: num(params.get("x"), 1),
   };
 
@@ -158,7 +159,7 @@
       });
     });
     calcEl.querySelector(".reset").addEventListener("click", () => {
-      Object.assign(state, { count: defaultCount, weight: refWeight, mult: 1 });
+      Object.assign(state, { count: defaultCount, weight: defaultWeight, mult: 1 });
       renderCalculator();
       update();
     });
@@ -294,7 +295,7 @@
       if (state.mult !== 1) next.set("x", fmt(state.mult));
     } else {
       if (state.count !== defaultCount) next.set("count", fmt(state.count));
-      if (state.weight !== refWeight) next.set("weight", fmt(state.weight));
+      if (state.weight !== defaultWeight) next.set("weight", fmt(state.weight));
     }
     const qs = next.toString();
     history.replaceState(null, "", location.pathname + (qs ? "?" + qs : "") + location.hash);

@@ -7,6 +7,8 @@ summary: "Closest to the classic Naples (VPN) standard: 00 flour only, 59% hydra
 yield:
   count: 15             # the batch as written below
   weight: 180           # 15 × 180g = 2,700g; the extra ~45g is a bowl-loss buffer
+  default_count: 4      # the calculator opens on 4 × 12-inch
+  default_weight: 260
   sizes: { 10: 180, 12: 260, 14: 350, 16: 460 }   # 10 from the source; the others are worked out from the same thickness
 
 dough:
@@ -24,7 +26,7 @@ dough:
 - *The yeast is very low on purpose: 0.06% fresh yeast, which is about 0.02% instant. That's what lets the dough sit out for up to a day without a fridge.*
 - *It says it makes 10–15 pizzas of 10–14 inches, but the only ball size it gives is 180g for a 10-inch. The whole batch makes 15 of those; use the size buttons for bigger pies.*
 
-**Measuring the yeast:** 0.35g is too small for most kitchen scales. Either use a 0.01g jeweler's scale, or dissolve **1g of instant yeast in 30g of water** and use **10g of that liquid** (about 0.33g of yeast). If you use the liquid, take that 10g out of the recipe's water.
+**Measuring the yeast:** amounts this small are too light for most kitchen scales. Either use a 0.01g jeweler's scale, or dissolve **1g of instant yeast in 30g of water** and use **30 times the yeast amount in liquid**. This batch needs [[yeast]] of yeast. For example, 4 balls of 260g need 0.13g, which is about 4g of the liquid. Take the liquid you use out of the recipe's water.
 
 ## Mix (by hand)
 

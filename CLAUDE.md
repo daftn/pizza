@@ -12,7 +12,7 @@ Personal pizza recipe site for the owner and friends, live at https://daftn.gith
 - `_layouts/recipe.html`: renders the header and dough links, embeds front matter as JSON in `#recipe-data`, and lists "Pizzas using this dough".
 - `assets/recipe.js`: calculator, ingredient tables, placeholder filling. Reads only `#recipe-data`.
 - `assets/style.css`: the whole look. Color tokens at the top, with a light set and a dark set (the dark set appears twice: the `prefers-color-scheme` block and `[data-theme="dark"]`; keep them in sync).
-- `_data/quotes.yml`: random quote on the landing page.
+- `_data/quotes.yml`: random quote on the landing page. Turned off for now (`show_quotes: false` in `_config.yml`); set it to `true` to bring it back.
 - `_config.yml`: `baseurl: "/pizza"` is required for the project site. Don't remove it. The site is named **Hail to the Pie** (`title`), tagline in `description`.
 - `index.html`: landing page. Sections: Doughs, Pizzas, Fear Fest Pies, Specials. Order within a section: `pin` (1, 2, …) first, then alphabetical. Doughs are pinned in style order (The Default 1, Leo's 2, Vito's 3, New York home 4, New York outdoor 5, Roman 6); give a new dough a pin. Pizza cards show the dough's `family` (e.g. "on The Default or Neapolitan"). Tapping the quote cycles to the next one.
 - `assets/photos/`: recipe photos (`photo:` in front matter). Make them with `python3 _tools/add_photo.py <photo> <slug>`; it squares, shrinks and strips metadata, including GPS. Never add a raw phone photo.

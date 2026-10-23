@@ -6,7 +6,7 @@ layout: default
 <section class="intro">
   <h1>{{ site.title }}</h1>
   <p>{{ site.description }}</p>
-  {% if site.data.quotes %}
+  {% if site.show_quotes and site.data.quotes %}
     <div class="quotes" role="button" tabindex="0" title="Tap for another quote" aria-label="Show another quote">
       {% for q in site.data.quotes %}
         <figure class="quote"{% unless forloop.first %} hidden{% endunless %}>

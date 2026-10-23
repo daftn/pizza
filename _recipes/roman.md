@@ -1,6 +1,7 @@
 ---
 title: Roman Style
 category: dough
+pin: 6
 summary: Light and crispy. 70% hydration with semolina and olive oil for a golden crust, 24–48 hour cold ferment.
 yield:
   count: 9              # nine 12-inch pies as written below

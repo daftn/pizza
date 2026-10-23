@@ -1,6 +1,7 @@
 ---
 title: New York (Home Oven)
 category: dough
+pin: 4
 summary: Classic NY dough with a touch of whole grain, 2–3 day cold ferment, baked on a steel at 550°F.
 yield:
   count: 2              # two 14-inch pies as written below

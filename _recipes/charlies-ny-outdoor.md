@@ -1,6 +1,7 @@
 ---
 title: New York (Outdoor Oven)
 category: dough
+pin: 5
 summary: Lean NY dough for a gas pizza oven. 62% hydration, no sugar, 3–4 day cold ferment, baked at 650–700°F.
 yield:
   count: 2              # two 14-inch pies as written below

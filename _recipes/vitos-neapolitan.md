@@ -1,6 +1,7 @@
 ---
 title: Vito's Neapolitan
 category: dough
+pin: 3
 summary: "Modern Neapolitan: overnight poolish, 00 plus 42% bread or Manitoba flour, 68% hydration."
 yield:
   count: 6              # the batch as written below

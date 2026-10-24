@@ -1,5 +1,7 @@
 ---
 title: Mozzferatu
+photo: charlies-ny-cheese.jpg
+card_photo: false
 category: pizza
 summary: The classic New York slice. Sweet oregano sauce, pecorino and whole-milk mozzarella, in a home oven or an outdoor oven.
 pairs_with:

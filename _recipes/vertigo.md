@@ -1,6 +1,7 @@
 ---
 title: Vertigo
 photo: vertigo.jpg
+card_photo: false
 category: pizza
 fest_year: 2026
 fest_theme: Alfred Hitchcock

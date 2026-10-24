@@ -1,5 +1,7 @@
 ---
 title: Boomsticks
+photo: cheesesticks.jpg
+card_photo: false
 category: special
 summary: "Hail to the cheese, baby. Utah-style fat sticks: 48-hour cold ferment, high-loft screen proof, shielded steel bake."
 pairs_with:

@@ -5,7 +5,7 @@ card_photo: false
 category: pizza
 fest_year: 2026
 fest_theme: Alfred Hitchcock
-summary: A double spiral of neon-orange vodka sauce and green pesto on mozzarella and provolone, with soppressata, pecorino and hot honey.
+summary: A double spiral of neon-orange vodka sauce and green pesto on mozzarella and provolone, with soppressata and a snowfall of pecorino and parmigiano.
 pairs_with:
   movie: "Vertigo"
   year: 1958
@@ -36,21 +36,20 @@ toppings:
   - name: After the bake
     items:
       - { id: hard_cheese, name: "Pecorino Romano and Parmigiano-Reggiano", qty: 25, unit: g, note: "Freshly grated, about 60/40" }
-      - { id: honey, name: "Hot honey", qty: [1, 1.5], unit: tbsp, note: "Mike's, or your favorite" }
 ---
 
-> *Don't look down.* A bone-white canvas of melted mozzarella and provolone, trapped in a dizzying double spiral of neon-orange vodka sauce and emerald basil pesto, studded with crispy soppressata, a snowfall of pecorino and parmigiano, and a final strike of hot honey.
+> *Don't look down.* A bone-white canvas of melted mozzarella and provolone, trapped in a dizzying double spiral of neon-orange vodka sauce and emerald basil pesto, studded with crispy soppressata and finished with a snowfall of pecorino and parmigiano.
 
 The first Fear Fest pie, for the Alfred Hitchcock year. Also known as *Spiral Into Madness* or *The Bell Tower*.
 
-You'll need **two squeeze bottles** with the tips snipped to about a ¼-inch opening.
+You'll need **two zip-top bags** for piping. Squeeze bottles clog on the little chunks in the sauces; a bag with a corner snipped off (about ¼ inch) doesn't.
 
 ## Sauce prep (1–2 hours ahead)
 
 1. **Reduce the vodka sauce.** Simmer the [[vodka]] vodka sauce with the [[chili]] red pepper flakes in a small pan over medium heat for 5–7 minutes, stirring now and then, until a spoon dragged through it leaves a brief trail. Take it a little thicker than seems right: the cream thins it back out, and a thick sauce holds a sharper line.
-2. **Add the glow.** Off the heat, stir in the [[cream]] heavy cream. It turns from brick red to an opaque, bright pastel orange. Let it cool to room temperature, then fill bottle #1.
-3. **Loosen the pesto.** Whisk the [[pesto_oil]] olive oil into the room-temperature [[pesto]] pesto until glossy and smooth, then fill bottle #2.
-4. **Keep both bottles on the counter.** Never pipe ice-cold sauce onto a hot pie.
+2. **Add the glow.** Off the heat, stir in the [[cream]] heavy cream. It turns from brick red to an opaque, bright pastel orange. Let it cool to room temperature, then spoon it into bag #1 and push it down into one corner.
+3. **Loosen the pesto.** Whisk the [[pesto_oil]] olive oil into the room-temperature [[pesto]] pesto until glossy and smooth, then spoon it into bag #2 the same way.
+4. **Keep both bags on the counter.** Never pipe ice-cold sauce onto a hot pie. Snip the corners just before piping.
 
 ## Build: cheese first
 
@@ -73,4 +72,4 @@ Do this at the table.
 
 1. **Slice first.** Cut 8 slices with a rocker blade or wheel and keep them pushed together in a circle. Slicing after the pesto drags green across the white and orange.
 2. **Pipe the green spiral** into the white tracks between the orange rings, from the center out.
-3. **The final strike.** Zig-zag or spiral the [[honey]] hot honey over the whole pie, then finish with a heavy snowfall of the [[hard_cheese]] grated pecorino and parmigiano around the rim. Serve right away.
+3. **The final snowfall.** Finish with a heavy snowfall of the [[hard_cheese]] grated pecorino and parmigiano around the rim. Serve right away.

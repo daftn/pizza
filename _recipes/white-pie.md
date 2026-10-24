@@ -37,6 +37,7 @@ toppings:
 
 1. **Dry the fresh mozzarella.** Tear each slice into 3–4 jagged, thumb-tip-sized chunks. Spread them on 3 layers of paper towels, pat the tops dry and leave them uncovered in the fridge for a few hours.
 2. **Make the garlic oil.** Stir the garlic into the olive oil and leave it at room temperature to infuse. Use it the same day; don't store garlic oil.
+   - **Shortcut:** skip the infusing. Brush plain olive oil on the dough and scatter the garlic right over it. Works just as well.
 3. **Whip the ricotta.** Stir the ricotta with a tiny splash of milk, a pinch of black pepper, and a pinch of salt until smooth and fluffy. Taste it: it should taste seasoned, not like plain cream. Take it out of the fridge 30 minutes before building so it's not ice-cold in the middle after a short bake.
 
 ## Build
